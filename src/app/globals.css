@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+/* Ensure hero/text is visible even if WOW.js doesn't initialize */
+.wow,
+.wow * {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Keep hero feature boxes within the hero section */
+.hero-style {
+  padding-bottom: 80px;
+  overflow: hidden !important;
+}
+
+/* Override bg_img height so hero grows with content */
+.hero.hero-style.bg_img {
+  height: auto;
+  overflow: hidden !important;
+}
+
+.hero-feature-row {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Prevent animation overflow */
+.wow {
+  overflow: hidden;
+}
+
+/* Contain scale animations */
+.scale-animation {
+  transform-origin: center;
+  will-change: transform;
+}
+
+/* Navbar logo text styling */
+.logo-text {
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 1;
+}
