@@ -1,3 +1,4 @@
+import Arrow from '../../svg/arrow.svg'
 
 import Link from "next/link";
 
@@ -21,24 +22,9 @@ export default function OurMainServices() {
                                                   </span>
                                                   <span className="arrow">
                                                       <span className="arrow-icon">
-                                                          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                              <rect x="5.06592" y="19.9785" width="20.5712" height="2.61221" transform="rotate(-40.2798 5.06592 19.9785)" fill="white" />
-                                                              <rect x="7.97095" y="7.24463" width="2.61221" height="2.61221" transform="rotate(-40.2798 7.97095 7.24463)" fill="white" />
-                                                              <rect x="11.6523" y="7.54834" width="2.61221" height="2.61221" transform="rotate(-40.2798 11.6523 7.54834)" fill="white" />
-                                                              <rect x="15.334" y="7.85205" width="2.61221" height="2.61221" transform="rotate(-40.2798 15.334 7.85205)" fill="white" />
-                                                              <rect x="18.7119" y="11.8374" width="2.61221" height="2.61221" transform="rotate(-40.2798 18.7119 11.8374)" fill="white" />
-                                                              <rect x="18.4084" y="15.52" width="2.61221" height="2.61221" transform="rotate(-40.2798 18.4084 15.52)" fill="white" />
-                                                              <rect x="18.104" y="19.2012" width="2.61221" height="2.61221" transform="rotate(-40.2798 18.104 19.2012)" fill="white" />
-                                                          </svg>
-                                                          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                              <rect x="5.06592" y="19.9785" width="20.5712" height="2.61221" transform="rotate(-40.2798 5.06592 19.9785)" fill="white" />
-                                                              <rect x="7.97095" y="7.24463" width="2.61221" height="2.61221" transform="rotate(-40.2798 7.97095 7.24463)" fill="white" />
-                                                              <rect x="11.6523" y="7.54834" width="2.61221" height="2.61221" transform="rotate(-40.2798 11.6523 7.54834)" fill="white" />
-                                                              <rect x="15.334" y="7.85205" width="2.61221" height="2.61221" transform="rotate(-40.2798 15.334 7.85205)" fill="white" />
-                                                              <rect x="18.7119" y="11.8374" width="2.61221" height="2.61221" transform="rotate(-40.2798 18.7119 11.8374)" fill="white" />
-                                                              <rect x="18.4084" y="15.52" width="2.61221" height="2.61221" transform="rotate(-40.2798 18.4084 15.52)" fill="white" />
-                                                              <rect x="18.104" y="19.2012" width="2.61221" height="2.61221" transform="rotate(-40.2798 18.104 19.2012)" fill="white" />
-                                                          </svg>
+                                                                            <Arrow width={28} height={28} /> 
+                                                                            <Arrow width={28} height={28} /> 
+
                                                       </span>
                                                   </span>
                                               </a>
@@ -74,15 +60,8 @@ export default function OurMainServices() {
                                               <a href="#services">AI Platform</a>
                                           </h3>
                                           <a className="xb-icon" href="#services">
-                                              <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <rect x="6.28979" y="21.4111" width="22.36" height="2.83936" transform="rotate(-40.2798 6.28979 21.4111)" fill="white" />
-                                                  <rect x="9.44751" y="7.57031" width="2.83936" height="2.83936" transform="rotate(-40.2798 9.44751 7.57031)" fill="white" />
-                                                  <rect x="13.449" y="7.90015" width="2.83936" height="2.83936" transform="rotate(-40.2798 13.449 7.90015)" fill="white" />
-                                                  <rect x="17.4507" y="8.23047" width="2.83936" height="2.83936" transform="rotate(-40.2798 17.4507 8.23047)" fill="white" />
-                                                  <rect x="21.1223" y="12.5627" width="2.83936" height="2.83936" transform="rotate(-40.2798 21.1223 12.5627)" fill="white" />
-                                                  <rect x="20.7925" y="16.5649" width="2.83936" height="2.83936" transform="rotate(-40.2798 20.7925 16.5649)" fill="white" />
-                                                  <rect x="20.4617" y="20.5667" width="2.83936" height="2.83936" transform="rotate(-40.2798 20.4617 20.5667)" fill="white" />
-                                              </svg>
+                                                                                        <Arrow width={31} height={31} /> 
+
                                           </a>
                                       </div>
                                   </div>
@@ -112,15 +91,8 @@ export default function OurMainServices() {
                                               <a href="#services">Content Creation</a>
                                           </h3>
                                           <a className="xb-icon" href="#services">
-                                              <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <rect x="6.28979" y="21.4111" width="22.36" height="2.83936" transform="rotate(-40.2798 6.28979 21.4111)" fill="white" />
-                                                  <rect x="9.44751" y="7.57031" width="2.83936" height="2.83936" transform="rotate(-40.2798 9.44751 7.57031)" fill="white" />
-                                                  <rect x="13.449" y="7.90015" width="2.83936" height="2.83936" transform="rotate(-40.2798 13.449 7.90015)" fill="white" />
-                                                  <rect x="17.4507" y="8.23047" width="2.83936" height="2.83936" transform="rotate(-40.2798 17.4507 8.23047)" fill="white" />
-                                                  <rect x="21.1223" y="12.5627" width="2.83936" height="2.83936" transform="rotate(-40.2798 21.1223 12.5627)" fill="white" />
-                                                  <rect x="20.7925" y="16.5649" width="2.83936" height="2.83936" transform="rotate(-40.2798 20.7925 16.5649)" fill="white" />
-                                                  <rect x="20.4617" y="20.5667" width="2.83936" height="2.83936" transform="rotate(-40.2798 20.4617 20.5667)" fill="white" />
-                                              </svg>
+                                                                                                                                  <Arrow width={31} height={31} /> 
+
                                           </a>
                                       </div>
                                   </div>
@@ -148,15 +120,8 @@ export default function OurMainServices() {
                                               <a href="#services">Business Tools</a>
                                           </h3>
                                           <a className="xb-icon" href="#services">
-                                              <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <rect x="6.28979" y="21.4111" width="22.36" height="2.83936" transform="rotate(-40.2798 6.28979 21.4111)" fill="white" />
-                                                  <rect x="9.44751" y="7.57031" width="2.83936" height="2.83936" transform="rotate(-40.2798 9.44751 7.57031)" fill="white" />
-                                                  <rect x="13.449" y="7.90015" width="2.83936" height="2.83936" transform="rotate(-40.2798 13.449 7.90015)" fill="white" />
-                                                  <rect x="17.4507" y="8.23047" width="2.83936" height="2.83936" transform="rotate(-40.2798 17.4507 8.23047)" fill="white" />
-                                                  <rect x="21.1223" y="12.5627" width="2.83936" height="2.83936" transform="rotate(-40.2798 21.1223 12.5627)" fill="white" />
-                                                  <rect x="20.7925" y="16.5649" width="2.83936" height="2.83936" transform="rotate(-40.2798 20.7925 16.5649)" fill="white" />
-                                                  <rect x="20.4617" y="20.5667" width="2.83936" height="2.83936" transform="rotate(-40.2798 20.4617 20.5667)" fill="white" />
-                                              </svg>
+                                                                                                                                     <Arrow width={31} height={31} /> 
+
                                           </a>
                                       </div>
                                   </div>
@@ -192,15 +157,8 @@ export default function OurMainServices() {
                                               <a href="#services">AI Agents</a>
                                           </h3>
                                           <a className="xb-icon" href="#services">
-                                              <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <rect x="6.28979" y="21.4111" width="22.36" height="2.83936" transform="rotate(-40.2798 6.28979 21.4111)" fill="white" />
-                                                  <rect x="9.44751" y="7.57031" width="2.83936" height="2.83936" transform="rotate(-40.2798 9.44751 7.57031)" fill="white" />
-                                                  <rect x="13.449" y="7.90015" width="2.83936" height="2.83936" transform="rotate(-40.2798 13.449 7.90015)" fill="white" />
-                                                  <rect x="17.4507" y="8.23047" width="2.83936" height="2.83936" transform="rotate(-40.2798 17.4507 8.23047)" fill="white" />
-                                                  <rect x="21.1223" y="12.5627" width="2.83936" height="2.83936" transform="rotate(-40.2798 21.1223 12.5627)" fill="white" />
-                                                  <rect x="20.7925" y="16.5649" width="2.83936" height="2.83936" transform="rotate(-40.2798 20.7925 16.5649)" fill="white" />
-                                                  <rect x="20.4617" y="20.5667" width="2.83936" height="2.83936" transform="rotate(-40.2798 20.4617 20.5667)" fill="white" />
-                                              </svg>
+                                                                                                                                     <Arrow width={31} height={31} /> 
+
                                           </a>
                                       </div>
                                   </div>
@@ -225,15 +183,8 @@ export default function OurMainServices() {
                                               <a href="#services">Personal Growth</a>
                                           </h3>
                                           <a className="xb-icon" href="#services">
-                                              <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <rect x="6.28979" y="21.4111" width="22.36" height="2.83936" transform="rotate(-40.2798 6.28979 21.4111)" fill="white" />
-                                                  <rect x="9.44751" y="7.57031" width="2.83936" height="2.83936" transform="rotate(-40.2798 9.44751 7.57031)" fill="white" />
-                                                  <rect x="13.449" y="7.90015" width="2.83936" height="2.83936" transform="rotate(-40.2798 13.449 7.90015)" fill="white" />
-                                                  <rect x="17.4507" y="8.23047" width="2.83936" height="2.83936" transform="rotate(-40.2798 17.4507 8.23047)" fill="white" />
-                                                  <rect x="21.1223" y="12.5627" width="2.83936" height="2.83936" transform="rotate(-40.2798 21.1223 12.5627)" fill="white" />
-                                                  <rect x="20.7925" y="16.5649" width="2.83936" height="2.83936" transform="rotate(-40.2798 20.7925 16.5649)" fill="white" />
-                                                  <rect x="20.4617" y="20.5667" width="2.83936" height="2.83936" transform="rotate(-40.2798 20.4617 20.5667)" fill="white" />
-                                              </svg>
+                                                                                                                                   <Arrow width={31} height={31} /> 
+
                                           </a>
                                       </div>
                                   </div>
