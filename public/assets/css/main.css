@@ -2678,8 +2678,9 @@ body[data-aos-easing=ease] [data-aos] {
     -webkit-transform: translateX(-400%);
     transform: translateX(-400%); } }
 .marquee-horizontal {
-  -webkit-animation: marquee-3 5s linear infinite;
-  animation: marquee-3 5s linear infinite; }
+  -webkit-animation: marquee-3 20s linear infinite;
+  animation: marquee-3 20s linear infinite; 
+}
 
 @-webkit-keyframes marquee-4 {
   from {
@@ -2696,8 +2697,9 @@ body[data-aos-easing=ease] [data-aos] {
     -webkit-transform: translateX(-400%);
     transform: translateX(-400%); } }
 .marquee-horizontal-bottom {
-  -webkit-animation: marquee-4 4s linear infinite;
-  animation: marquee-4 6s linear infinite; }
+  -webkit-animation: marquee-4 24s linear infinite;
+  animation: marquee-4 24s linear infinite; 
+}
 
 .path {
   stroke-dasharray: 6;
@@ -4912,6 +4914,18 @@ Drop Down menu end
   @media (max-width: 1199px) {
     .xb-heading-btn {
       transform: translate(0, 0); } }
+
+@media only screen and (max-width: 360px) {
+
+  .process-title .xb-heading-btn {
+    transform: translate(0, 5px);
+  }
+
+}
+
+
+
+      
 
 .xb-project-wrap_2 .xb-project-item {
   top: 0;
@@ -11338,6 +11352,9 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
   .thm-btn:hover .arrow-icon svg:nth-child(2) {
     transition-delay: .1s;
     transform: translate(0, 0); }
+
+
+   
 
 .agency-btn .text {
   padding: 21.2px 20px;

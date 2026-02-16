@@ -2,7 +2,7 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Nxthenai - AI Platform",
+  title: "Empowering Pakistan's Digital Future | AXI SYSTEMS",
   description:
     "Nxthenai AI Platform for workflows, automation, and decision intelligence.",
 };

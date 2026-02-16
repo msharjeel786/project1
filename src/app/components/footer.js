@@ -6,8 +6,8 @@ export default function Footer() {
     <footer className="footer footer-style-one pt-145 bg_img" data-background="/assets/img/bg/footer-bg.png" >
         <div className="xb-footer-wrap">
             <div className="xb-footer-heading wow zoomIn" data-wow-delay="0ms" data-wow-duration="600ms">
-                <h1 className="title">Nextgeni</h1>
-                <a className="mail" href="mailto:nextgeni@domain.com"><img src="/assets/img/icon/email-icon.svg" alt="icon" />nextgeni@domain.com</a>
+                <h1 className="title">AXI SYSTEMS</h1>
+                <a className="mail" href="mailto:info@axisystems.com.pk"><img src="/assets/img/icon/email-icon.svg" alt="icon" />info@axisystems.com.pk</a>
             </div>
             <div className="xb-footer-nav">
                 <div className="xb-footer-nav-item">
@@ -87,14 +87,14 @@ export default function Footer() {
             <div className="xb-footer-bottom">
                 <div className="contact-item">
                     <img src="/assets/img/icon/location-icon.svg" alt="icon" />
-                    <span className="contact-method">4517 Washington, USA</span>
+                    <span className="contact-method" style={{ fontSize: '18px' }}>6th Floor, NTS Building, Plot # 96 Street 4, H-8/1, Islamabad, Pakistan</span>
                 </div>
                 <div className="contact-item copyright-item">
-                    <p>Copyright © 2025 <a href="#home">Nextgeni</a>, All rights reserved.</p>
+                    <p>Copyright © 2026 <a href="#home">AXI Systems </a>, All rights reserved.</p>
                 </div>
                 <div className="contact-item">
                     <a href="callto:+(1)12304528597"><img src="/assets/img/icon/call-icon.svg" alt="icon" /></a>
-                    <a className="contact-method" href="callto:+(1)12304528597">+(1)1230 452 8597</a>
+                    <a className="contact-method" href="callto:+(1)12304528597">+92-334-5558140</a>
                 </div>
             </div>
         </div>

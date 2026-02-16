@@ -34,10 +34,10 @@ export default function OurLatestNews() {
                                 <div className="xb-blog-item wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">
                                     <div className="xb-item--inner img-hove-effect xb-border">
                                         <div className="xb-img">
-                                            <a href="/blog-details"><img src="/assets/img/blog/img01.jpg" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/img01.jpg" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/img01.jpg" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/img01.jpg" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/image.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/image.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/image.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/image.png    " alt="image" /></a>
                                         </div>
                                         <div className="xb-item--holder">
                                             <ul className="xb-item--meta list-unstyled ul_li">
@@ -55,10 +55,10 @@ export default function OurLatestNews() {
                                 <div className="xb-blog-item xb-small-blog-item wow fadeInUp" data-wow-delay="150ms" data-wow-duration="600ms">
                                     <div className="xb-item--inner img-hove-effect xb-border">
                                         <div className="xb-img">
-                                            <a href="/blog-details"><img src="/assets/img/blog/img02.jpg" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/img02.jpg" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/img02.jpg" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/img02.jpg" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/image copy.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/image copy.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/image copy.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/image copy.png" alt="image" /></a>
                                         </div>
                                         <div className="xb-item--holder">
                                             <ul className="xb-item--meta list-unstyled ul_li">
@@ -76,10 +76,10 @@ export default function OurLatestNews() {
                                 <div className="xb-blog-item xb-small-blog-item wow fadeInUp" data-wow-delay="300ms" data-wow-duration="600ms">
                                     <div className="xb-item--inner img-hove-effect xb-border">
                                         <div className="xb-img">
-                                            <a href="/blog-details"><img src="/assets/img/blog/img03.jpg" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/img03.jpg" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/img03.jpg" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/img03.jpg" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/image copy 2.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/image copy 2.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/image copy 2.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/image copy 2.png" alt="image" /></a>
                                         </div>
                                         <div className="xb-item--holder">
                                             <ul className="xb-item--meta list-unstyled ul_li">

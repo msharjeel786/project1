@@ -20,317 +20,317 @@ export default function Professional() {
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">GET</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">GET</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">GET</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">GET</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">GET</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">GET</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                     </div>
                                     <div className="xb-marquee-items marquee-horizontal-bottom">
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                     </div>
                                     <div className="xb-marquee-items marquee-horizontal">
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                     </div>
                                     <div className="xb-marquee-items marquee-horizontal-bottom">
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">GET</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">GET</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">GET</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                     </div>
                                     <div className="xb-marquee-items marquee-horizontal">
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">get</span>
                                             <span className="number">100</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">get</span>
                                             <span className="number">100</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">get</span>
                                             <span className="number">100</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">300</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                     </div>
                                     <div className="xb-marquee-items marquee-horizontal-bottom">
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">get</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">post</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">get</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag">get</span>
                                             <span className="number">200</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                         <div className="xb-marquee-item">
                                             <span className="tag tag-red">delate</span>
                                             <span className="number number-red">500</span>
-                                            <p>users/d72d9c38-f0d7-32b6-8c53-508d2134354/1</p>
+                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
                                         </div>
                                     </div>
                                 </div>

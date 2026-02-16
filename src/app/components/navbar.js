@@ -11,7 +11,9 @@ export default function Navbar() {
             <div className="container mxw-1650">
                 <div className="header__wrap ul_li_between">
                     <div className="xb-header-logo">
-                        <a href="/" className="logo1"><img src="/assets/img/logo/logo.svg" alt="" /></a>
+                        <a href="/" className="logo1">
+                            <img src="/assets/img/logo/logo1.svg" alt="" style={{ width: '200px', height: 'auto' }} />
+                        </a>
                     </div>
                     <div className="main-menu__wrap  navbar navbar-expand-lg p-0">
                         <nav className="main-menu collapse navbar-collapse">
@@ -344,7 +346,7 @@ export default function Navbar() {
                                                                 <div className="megamenu_case">
                                                                     <div className="xb-item--inner">
                                                                         <div className="xb-item--img">
-                                                                            <img src="/assets/img/service/img21.png" alt="image" />
+                                                                            <img src="/assets/img/service/image copy 4.png" alt="image" />
                                                                         </div>
                                                                         <div className="xb-item--holder">
                                                                             <h3 className="xb-item--title">General AI projects..</h3>

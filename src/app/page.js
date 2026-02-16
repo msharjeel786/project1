@@ -72,7 +72,7 @@ export default function Home() {
                                     <div className="xb-content-wrap">
                                         <div className="sec-title contact-sec-title">
                                             <span className="sub-title mb-15">Our Achievements</span>
-                                            <h2 className="title horizontal-shape">We are trusted <img src="/assets/img/icon/b10c3e43e836d32554bf.gif" alt="shape" /> Nextgeni AI platform</h2>
+                                            <h2 className="title horizontal-shape">We are trusted <img src="/assets/img/icon/b10c3e43e836d32554bf.gif" alt="shape" /> AXI Systems</h2>
                                         </div>
                                         <div className="xb-contact-conent wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="600ms">
                                             <div className="xb-contact-inner ul_li_between">

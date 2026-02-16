@@ -17,12 +17,12 @@ export default function Hero() {
                                <div className="row">
                                    <div className="col-lg-9 col-md-9">
                                        <div className="hero-content">
-                                           <h2 className="title scale-animation wow">Empower your business with the Nxtgeni AI platform</h2>
-                                           <p className="sub-title scale-animation wow">A platform where users can use AI agents and tools to automate work, make smarter decisions, and grow faster.</p>
+                                           <h2 className="title scale-animation wow">Empowering Pakistan's Digital Future</h2>
+                                           <p className="sub-title scale-animation wow">Driving innovation through technology, governance, and human capital to build a secure and connected digital ecosystem.</p>
                                            <div className="hero-btn scale-animation wow">
                                                <a className="thm-btn agency-btn" href="#about">
                                                    <span className="text">
-                                                       Begin Today with us
+                                                       Explore more solutions
                                                    </span>
                                                    <span className="arrow">
                                                        <span className="arrow-icon">
@@ -47,8 +47,8 @@ export default function Hero() {
                                            <div className="xb-item--inner xb-border">
                                                <span className="xb-item--icon"><img src="/assets/img/icon/feature-icon01.svg" alt="icon" /></span>
                                                <div className="xb-item--holder">
-                                                   <h2 className="xb-item--title">Smarter insights</h2>
-                                                   <p className="xb-item--content">Make faster, data-driven decisions powered by real-time AI analysis and prediction.</p>
+                                                   <h2 className="xb-item--title">Digital Education</h2>
+                                                   <p className="xb-item--content">Building digital literacy and skills for the workforce of tomorrow.</p>
                                                </div>
                                            </div>
                                        </div>
@@ -58,8 +58,10 @@ export default function Hero() {
                                            <div className="xb-item--inner xb-border">
                                                <span className="xb-item--icon"><img src="/assets/img/icon/feature-icon02.svg" alt="icon" /></span>
                                                <div className="xb-item--holder">
-                                                   <h2 className="xb-item--title">Integrated AI solutions</h2>
-                                                   <p className="xb-item--content">No extra tools or plugins needed. Get built-in, scalable AI from day one.</p>
+                                                   <h2 className="xb-item--title">AI & Data Analytics</h2>
+                                                   <p className="xb-item--content">Leveraging artificial intelligence to drive data-driven decisions and automation.
+
+</p>
                                                </div>
                                            </div>
                                        </div>
@@ -69,8 +71,8 @@ export default function Hero() {
                                            <div className="xb-item--inner xb-border">
                                                <span className="xb-item--icon"><img src="/assets/img/icon/feature-icon03.svg" alt="icon" /></span>
                                                <div className="xb-item--holder">
-                                                   <h2 className="xb-item--title">End-to-end automation</h2>
-                                                   <p className="xb-item--content">Eliminate bottlenecks with intelligent workflows that never leave you guessing.</p>
+                                                   <h2 className="xb-item--title">Cybersecurity</h2>
+                                                   <p className="xb-item--content">Protecting digital infrastructure with enterprise-grade security solutions.</p>
                                                </div>
                                            </div>
                                        </div>
