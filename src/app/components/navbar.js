@@ -12,7 +12,7 @@ export default function Navbar() {
                 <div className="header__wrap ul_li_between">
                     <div className="xb-header-logo">
                         <a href="/" className="logo1">
-                            <img src="/assets/img/logo/logo1.svg" alt="" style={{ width: '150px', height: 'auto' }} />
+                            <img src="/assets/img/logo/AXISystemslogofotter.svg" alt="" style={{ width: '150px', height: 'auto' }} />
                         </a>
                     </div>
                     <div className="main-menu__wrap  navbar navbar-expand-lg p-0">
@@ -20,15 +20,15 @@ export default function Navbar() {
                             <ul>
                                 <li className="menu-item-has-children active">
                                     <a href="/"><span>Home</span></a>
-                                    <ul className="submenu">
+                                    {/* <ul className="submenu">
                                         <li className="active"><a href="/"><span>Ai Agency</span></a></li>
                                         <li><a href="/ai-marketing"><span>Ai Marketing</span></a></li>
                                         <li><a href="/ai-chatbot"><span>Ai Chatbot</span></a></li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
                                 <li className=""><a href="/about"><span>About Us</span></a></li>
                                 <li className="menu-item-has-children megamenu">
-                                    <a href="#!"><span>Pages</span></a>
+                                    {/* <a href="#!"><span>Pages</span></a>
                                     <ul className="submenu">
                                         <li>
                                             <div className="mega_menu_wrapper">
@@ -217,7 +217,7 @@ export default function Navbar() {
                                                 </div>
                                             </div>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
                                 <li className="menu-item-has-children megamenu">
                                     <a href="#!"><span>Services</span></a>
