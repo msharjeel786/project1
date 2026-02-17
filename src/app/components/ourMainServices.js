@@ -144,10 +144,10 @@ export default function OurMainServices() {
                             <p className="xb-item--content">Scalable, secure, and reliable cloud solutions designed for government and enterprise.</p>
                              <div className=" img-hove-effect">
                                 <div className="xb-item--img xb-img">
-                                    <a href="#services"><img src="/assets/img/service/cloud.png" alt="image" /></a>
-                                    <a href="#services"><img src="/assets/img/service/cloud.png" alt="image" /></a>
-                                    <a href="#services"><img src="/assets/img/service/cloud.png" alt="image" /></a>
-                                    <a href="#services"><img src="/assets/img/service/cloud.png" alt="image" /></a>
+                                    <a href="#services"><img src="/assets/img/service/image.png" alt="image" /></a>
+                                    <a href="#services"><img src="/assets/img/service/image.png" alt="image" /></a>
+                                    <a href="#services"><img src="/assets/img/service/image.png" alt="image" /></a>
+                                    <a href="#services"><img src="/assets/img/service/image.png" alt="image" /></a>
                                 </div>
                             </div>
                         </div>

@@ -10,7 +10,7 @@ export default function OurProjects() {
    <section id="tools" className="project project-tools pt-135 pb-150">
             <div className="container">
                 <div className="sec-title custom-sec-title xb-sec-padding text-center">
-                    <span className="sub-title">AI Tools &amp; Agents</span>
+                    <span className="sub-title">Our  Products</span>
                     <h2 className="title"><span className="round-img"><img src="/assets/img/icon/b10c3e43e836d32554bf.gif" alt="image" /></span>  Explore every Products with full detail
                     </h2>
                     <div className="xb-heading-btn d-inline">

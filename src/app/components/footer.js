@@ -6,7 +6,8 @@ export default function Footer() {
     <footer className="footer footer-style-one pt-145 bg_img" data-background="/assets/img/bg/footer-bg.png" >
         <div className="xb-footer-wrap">
             <div className="xb-footer-heading wow zoomIn" data-wow-delay="0ms" data-wow-duration="600ms">
-                <h1 className="title">AXI SYSTEMS</h1>
+                <h1 className="title">AXI</h1>
+                
                 <a className="mail" href="mailto:info@axisystems.com.pk"><img src="/assets/img/icon/email-icon.svg" alt="icon" />info@axisystems.com.pk</a>
             </div>
             <div className="xb-footer-nav">
@@ -68,7 +69,7 @@ export default function Footer() {
                                            <Arrow width={28} height={28} /> 
 
                     </span>
-                    <a className="xb-overlay" href="#!"></a>
+                    <a className="xb-overlay" href="https://pk.linkedin.com/company/axi-technologiespak"></a>
                 </div>
                 <div className="xb-social-media-item ul_li_between">
                     <div className="xb-item--holder ul_li">
