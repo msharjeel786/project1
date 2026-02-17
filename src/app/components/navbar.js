@@ -176,7 +176,7 @@ export default function Navbar() {
                                                                 <div className="mega_menu_left">
                                                                     <div className="author_box">
                                                                         <div className="author_image">
-                                                                            <img src="/assets/img/blog/mega-robot.jpg" alt="image" />
+                                                                            <img src="/assets/img/blog/AI_12.jpg" alt="image" />
                                                                         </div>
                                                                         <div className="author_box_content">
                                                                             <h3 className="mb-60 text-white">
@@ -202,12 +202,11 @@ export default function Navbar() {
                                                                         </div>
                                                                         <div className="author_box_content">
                                                                             <p className="mb-45 text-white">
-                                                                                “As CEO of Telligy, I’ve focused on clarity, efficiency, and results — turning
-                                                                                ideas into real value without reinventing the wheel.”
+                                                                                “As CEO of AXI Systems, I leverage AI to build efficient, results-driven software that turns ideas into scalable digital products.”
                                                                             </p>
                                                                             <div className="author_holder">
                                                                                 <h4 className="author_name text-white">Sebastian Patel</h4>
-                                                                                <span className="author_designation text-white">CEO & Chairman at, <a href="/">Aivora</a></span>
+                                                                                <span className="author_designation text-white">CEO & Chairman at, <a href="/">AXI Systems</a></span>
                                                                             </div>
                                                                         </div>
                                                                     </div>
