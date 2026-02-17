@@ -12,7 +12,7 @@ export default function Navbar() {
                 <div className="header__wrap ul_li_between">
                     <div className="xb-header-logo">
                         <a href="/" className="logo1">
-                            <img src="/assets/img/logo/logo1.svg" alt="" style={{ width: '200px', height: 'auto' }} />
+                            <img src="/assets/img/logo/logo1.svg" alt="" style={{ width: '150px', height: 'auto' }} />
                         </a>
                     </div>
                     <div className="main-menu__wrap  navbar navbar-expand-lg p-0">
