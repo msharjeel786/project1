@@ -1,6 +1,41 @@
 import Link from "next/link";
+import { useState } from "react";
 
 export default function ContactUs() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    service: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("/api/contact/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        alert("Message sent successfully!");
+      } else {
+        alert("Failed to send message. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("An error occurred. Please try again later.");
+    }
+  };
+
   return (
       <section id="contact" className="contact-section pt-150 pb-140 bg_img" data-background="/assets/img/bg/contact-bg.png"> 
                  <div className="container">
@@ -33,25 +68,25 @@ export default function ContactUs() {
                                      <h3 className="title">Ready to collaborate with us?</h3>
                                      <p className="sub-title">Who knows where a single message might lead you.</p>
                                  </div>
-                                 <form action="#!" className="xb-contact-input-form">
+                                 <form onSubmit={handleSubmit} className="xb-contact-input-form">
                                      <div className="row mt-none-20">
                                          <div className="col-lg-6 col-md-6 mt-20">
                                              <div className="xb-input-field">
-                                                 <input id="author-name" type="text" required />
+                                                 <input id="author-name" name="name" type="text" value={formData.name} onChange={handleChange} required />
                                                  <label htmlFor="author-name">Your Name*</label>
                                                  <img src="/assets/img/icon/user-balck-icon.svg" alt="icon" />
                                              </div>
                                          </div>
                                          <div className="col-lg-6 col-md-6 mt-20">
                                              <div className="xb-input-field">
-                                                 <input id="author-email" type="email" required />
+                                                 <input id="author-email" name="email" type="email" value={formData.email} onChange={handleChange} required />
                                                  <label htmlFor="author-email">Email Address*</label>
                                                  <img src="/assets/img/icon/sms-balck-icon.svg" alt="icon" />
                                              </div>
                                          </div>
                                          <div className="col-lg-6 col-md-6 mt-20">
                                              <div className="xb-input-field">
-                                                 <input id="author-phone" type="text" required />
+                                                 <input id="author-phone" name="phone" type="text" value={formData.phone} onChange={handleChange} required />
                                                  <label htmlFor="author-phone">Contact No*</label>
                                                  <img src="/assets/img/icon/call-icon02.svg" alt="icon" />
                                              </div>
@@ -65,18 +100,18 @@ export default function ContactUs() {
                                          </div>
                                          <div className="col-lg-12 col-md-12 mt-20">
                                              <div className="xb-input-field xb-select-field">
-                                                 <select className="nice-select">
-                                                     <option value="1">Select Service*</option>
-                                                     <option value="2">AI - marketing</option>
-                                                     <option value="3">AI consulting</option>
-                                                     <option value="4">AI chatbot virtual</option>
+                                                 <select name="service" className="nice-select" value={formData.service} onChange={handleChange} required>
+                                                     <option value="">Select Service*</option>
+                                                     <option value="AI - marketing">AI - marketing</option>
+                                                     <option value="AI consulting">AI consulting</option>
+                                                     <option value="AI chatbot virtual">AI chatbot virtual</option>
                                                  </select>
                                                  <img src="/assets/img/icon/list-icon.svg" alt="icon" />
                                              </div>
                                          </div>
                                          <div className="col-lg-12 col-md-12 mt-20">
                                              <div className="xb-input-field xb-massage-field">
-                                                 <textarea id="massage" required></textarea>
+                                                 <textarea id="massage" name="message" value={formData.message} onChange={handleChange} required></textarea>
                                                  <label htmlFor="massage">Your Message..</label>
                                                  <img src="/assets/img/icon/messages-icon.svg" alt="icon" />
                                              </div>

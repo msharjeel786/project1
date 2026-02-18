@@ -495,7 +495,7 @@
 	});	
 	$('.marquee-right').marquee({
 		speed: 50,
-		gap: 50,
+		// gap: 50,
 		delayBeforeStart: 0,
 		direction: 'right',
 		duplicated: true,
