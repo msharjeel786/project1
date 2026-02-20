@@ -12,7 +12,7 @@ export default function Navbar() {
                 <div className="header__wrap ul_li_between">
                     <div className="xb-header-logo">
                         <a href="/" className="logo1">
-                            <img src="/assets/img/logo/AXISystemslogofotter.svg" alt="" style={{ width: '250px', height: 'auto' }} />
+                            <img src="/assets/img/logo/AXISystemslogofotter.svg" alt="" style={{ width: '200px', height: 'auto' }} />
                         </a>
                     </div>
                     <div className="main-menu__wrap  navbar navbar-expand-lg p-0">
@@ -26,8 +26,8 @@ export default function Navbar() {
                                         <li><a href="/ai-chatbot"><span>Ai Chatbot</span></a></li>
                                     </ul>
                                 </li>
-                                <li className=""><a href="/about"><span>About Us</span></a></li>
-                                <li className="menu-item-has-children megamenu">
+                                <li className=""><a href="#about"><span>About Us</span></a></li>
+                                {/* <li className="menu-item-has-children megamenu">
                                     <a href="#!"><span>Pages</span></a>
                                     <ul className="submenu">
                                         <li>
@@ -218,7 +218,7 @@ export default function Navbar() {
                                             </div>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> */}
                                 <li className="menu-item-has-children megamenu">
                                     <a href="#!"><span>Services</span></a>
                                     <ul className="submenu">
@@ -324,17 +324,17 @@ export default function Navbar() {
                                                                                         <div className="xb-item--holder ul_li">
                                                                                             <span className="xb-item--icon"><img src="/assets/img/icon/m_05.svg" alt="icon" /></span>
                                                                                             <h3 className="xb-item--title">
-                                                                                                <a href="/contact">Need any custom AI services.</a>
+                                                                                                <a href="#contact">Need any custom AI services.</a>
                                                                                             </h3>
                                                                                         </div>
                                                                                         <p className="xb-item--text">Discover our core offerings.</p>
                                                                                     </div>
-                                                                                    <a href="/contact" className="xb-item--btn">
+                                                                                    <a href="#contact" className="xb-item--btn">
                                                                                      <Arrow width={31} height={31} /> 
                                                                                                                                   <Arrow width={31} height={31} /> 
                                       
                                                                                     </a>
-                                                                                    <a href="/contact" className="xb-overlay"></a>
+                                                                                    <a href="#contact" className="xb-overlay"></a>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -350,7 +350,7 @@ export default function Navbar() {
                                                                         <div className="xb-item--holder">
                                                                             <h3 className="xb-item--title">General AI projects..</h3>
                                                                             <p className="xb-item--text">We deliver AI solutions streamline operations, boost efficiency.</p>
-                                                                            <a className="thm-btn agency-btn megamenu-btn" href="/project">
+                                                                            <a className="thm-btn agency-btn megamenu-btn" href="#tools">
                                                                                 <span className="text">
                                                                                     read more project
                                                                                 </span>
@@ -374,13 +374,13 @@ export default function Navbar() {
                                     </ul>
                                 </li>
                                 <li className="menu-item-has-children">
-                                    <a href="/blog"><span>Blog</span></a>
-                                    <ul className="submenu">
-                                        <li><a href="/blog"><span>Blog</span></a></li>
+                                    <a href="#blogs"><span>Blog</span></a>
+                                    {/* <ul className="submenu">
+                                        <li><a href="#testimonials"><span>Blog</span></a></li>
                                         <li><a href="/blog-details"><span>Blog Details</span></a></li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
-                                <li><a href="/contact"><span>Contact Us</span></a></li>
+                                <li><a href="#contact"><span>Contact Us</span></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -415,7 +415,7 @@ export default function Navbar() {
                                             <li><a href="/ai-chatbot"><span>Ai Chatbot</span></a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="/about"><span>about us</span></a></li>
+                                    <li><a href="#about"><span>about us</span></a></li>
                                     <li className="menu-item menu-item-has-children">
                                         <a href="#!"><span>page</span></a>
                                         <ul className="sub-menu">
@@ -434,13 +434,13 @@ export default function Navbar() {
                                         </ul>
                                     </li>
                                     <li className="menu-item menu-item-has-children">
-                                        <a href="/blog"><span>Blog</span></a>
-                                        <ul className="sub-menu">
+                                        <a href="#blogs"><span>Blog</span></a>
+                                        {/* <ul className="sub-menu">
                                             <li><a href="/blog"><span>Blog</span></a></li>
                                             <li><a href="/blog-details"><span>Blog Details</span></a></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>
-                                    <li><a href="/contact"><span>Contact Us</span></a></li>
+                                    <li><a href="#contact"><span>Contact Us</span></a></li>
                                 </ul>
                             </nav>
                         </div>

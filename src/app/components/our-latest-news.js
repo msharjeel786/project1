@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function OurLatestNews() {
   
   return (
-    <section className="blog pt-150 bg_img" data-background="/assets/img/bg/blog-bg.png">
+    <section id='blogs' className="blog pt-150 bg_img" data-background="/assets/img/bg/blog-bg.png">
             <div className="container">
                 <div className="row mt-none-30">
                     <div className="col-lg-4 mt-30">
