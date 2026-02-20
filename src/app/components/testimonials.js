@@ -18,13 +18,13 @@ export default function Testimonials() {
                                         <li>5.0</li>
                                     </ul>
                                     <p className="xb-item--content">
-                                        "We saw a big boost in engagement and sales with their recommendation engine. It personalizes the shopping experience perfectly.
+                                        Partnering with Axi Technology was one of the best decisions for our business. Their team seamlessly integrated cutting-edge AI solutions into our processes, boosting efficiency and innovation. They not only understood our needs but exceeded our expectations with their professionalism and expertise. Highly recommended!
                                     </p>
                                     <div className="xb-item--author ul_li">
                                         <div className="xb-item--avatar"><img src="/assets/img/avatar/avatar1.jpg" alt="avatar-image" /></div>
                                         <div className="xb-item--holder">
-                                            <h3 className="xb-item--name">Riya Mehta</h3>
-                                            <span className="xb-item--desig">Manager - Trendico</span>
+                                            <h3 className="xb-item--name">M Sheheryar Sultan</h3>
+                                            <span className="xb-item--desig">NHA</span>
                                         </div>
                                     </div>
                                 </div>
@@ -39,13 +39,13 @@ export default function Testimonials() {
                                         <li>4.9</li>
                                     </ul>
                                     <p className="xb-item--content">
-                                        "Their NLP tool saves us hours by extracting key info from large documents instantly. It's fast, accurate, and a huge time-saver."
+                                       The team at Axi Technology is exceptional! From the initial consultation to the final delivery, they demonstrated technical brilliance and a client-first approach. The software solutions they provided have transformed the way we operate, making us more agile and future-ready. We’re thrilled to have found such a reliable partner.
                                     </p>
                                     <div className="xb-item--author ul_li">
                                         <div className="xb-item--avatar"><img src="/assets/img/avatar/avatar2.jpg" alt="avatar-image" /></div>
                                         <div className="xb-item--holder">
-                                            <h3 className="xb-item--name">Miguel Torres</h3>
-                                            <span className="xb-item--desig">CEO & Funder - DocFlow</span>
+                                            <h3 className="xb-item--name">Dr. Sajid Qama</h3>
+                                            <span className="xb-item--desig">NTS</span>
                                         </div>
                                     </div>
                                 </div>
@@ -60,13 +60,13 @@ export default function Testimonials() {
                                         <li>5.0</li>
                                     </ul>
                                     <p className="xb-item--content">
-                                        "Their automation solutions saved us countless hours. Tasks that took days are now completed in minutes. The ROI was almost immediate."
+                                       Gelecek Solution is recognized as a pioneering force in the tech industry, dedicated to delivering innovative software solutions that enable businesses to achieve their goals efficiently and effectively. Their unwavering commitment to quality and customer satisfaction distinguishes them as a trusted partner for organizations seeking to enhance their digital capabilities.
                                     </p>
                                     <div className="xb-item--author ul_li">
                                         <div className="xb-item--avatar"><img src="/assets/img/avatar/avatar3.jpg" alt="avatar-image" /></div>
                                         <div className="xb-item--holder">
-                                            <h3 className="xb-item--name">Sebastian Clark</h3>
-                                            <span className="xb-item--desig">Manager - SwiftLogix</span>
+                                            <h3 className="xb-item--name">Hisham Sarwar</h3>
+                                            <span className="xb-item--desig">CEO of Innovista</span>
                                         </div>
                                     </div>
                                 </div>

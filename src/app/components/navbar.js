@@ -20,11 +20,11 @@ export default function Navbar() {
                             <ul>
                                 <li className="menu-item-has-children active">
                                     <a href="/"><span>Home</span></a>
-                                    <ul className="submenu">
+                                    {/* <ul className="submenu">
                                         <li className="active"><a href="/"><span>Ai Agency</span></a></li>
                                         <li><a href="/ai-marketing"><span>Ai Marketing</span></a></li>
                                         <li><a href="/ai-chatbot"><span>Ai Chatbot</span></a></li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
                                 <li className=""><a href="#about"><span>About Us</span></a></li>
                                 {/* <li className="menu-item-has-children megamenu">
@@ -229,7 +229,7 @@ export default function Navbar() {
                                                         <div className="row justify-content-lg-between">
                                                             <div className="col-xl-9 col-lg-8">
                                                                 <div className="mega_menu_box">
-                                                                    <div className="megamenu_widget_inner">
+                                                                    {/* <div className="megamenu_widget_inner">
                                                                         <div className="row">
                                                                             <div className="col-xl-4 col-lg-6 megamenu-col">
                                                                                 <div className="megamenu_widget">
@@ -284,7 +284,7 @@ export default function Navbar() {
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </div> */}
                                                                     <div className="social_area">
                                                                         <div className="row mt-none-30 align-items-center">
                                                                             <div className="col-xl-4 mt-30">
@@ -385,7 +385,7 @@ export default function Navbar() {
                         </nav>
                     </div>
                     <div className="header-btn">
-                        <a className="thm-btn" href="/contact">join now</a>
+                        <a className="thm-btn" href="#contact">join now</a>
                     </div>
                     <div className="header-bar-mobile side-menu d-lg-none">
                         <a className="xb-nav-mobile" href="javascript:void(0);">
