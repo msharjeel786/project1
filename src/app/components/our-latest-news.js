@@ -10,13 +10,13 @@ export default function OurLatestNews() {
                 <div className="row mt-none-30">
                     <div className="col-lg-4 mt-30">
                         <div className="sec-title blog-sec-title mb-70">
-                            <span className="sub-title mb-15">Our Latest News</span>
-                            <h2 className="title">Our latest news <img src="/assets/img/icon/original-9e54f87f13d.gif" alt="shape" /></h2>
+                            <span className="sub-title mb-15">Events & Gallery</span>
+                            <h2 className="title">Highlights from conferences, workshops, and milestones shaping Pakistan's digital ecosystem.<img src="/assets/img/icon/original-9e54f87f13d.gif" alt="shape" /></h2>
                         </div>
                         <div className="blog-btn">
-                            <a className="thm-btn agency-btn" href="/blog">
+                            <a className="thm-btn agency-btn" href="/events">
                                 <span className="text">
-                                    view more blog
+                                   View All Events
                                 </span>
                                 <span className="arrow">
                                     <span className="arrow-icon">
@@ -41,11 +41,11 @@ export default function OurLatestNews() {
                                         </div>
                                         <div className="xb-item--holder">
                                             <ul className="xb-item--meta list-unstyled ul_li">
-                                                <li><img src="/assets/img/icon/blog-icon01.svg" alt="icon" />ai business tips</li>
-                                                <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" />march 24,2025 </li>
+                                                <li><img src="/assets/img/icon/blog-icon01.svg" alt="icon" />Chinese Delegation Visit</li>
+                                                <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" />Delegation</li>
                                             </ul>
                                             <h2 className="xb-item--title">
-                                                <a href="/blog-details">How AI is transforming modern business operations and driving innovation everything you need to know..</a>
+                                                <a href="/blog-details">We at AXI Systems were honored to host a distinguished delegation at our headquarters..</a>
                                             </h2>
                                         </div>
                                     </div>
@@ -55,18 +55,18 @@ export default function OurLatestNews() {
                                 <div className="xb-blog-item xb-small-blog-item wow fadeInUp" data-wow-delay="150ms" data-wow-duration="600ms">
                                     <div className="xb-item--inner img-hove-effect xb-border">
                                         <div className="xb-img">
-                                            <a href="/blog-details"><img src="/assets/img/blog/image copy.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/image copy.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/image copy.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/image copy.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/52.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/52.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/52.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/52.png" alt="image" /></a>
                                         </div>
                                         <div className="xb-item--holder">
                                             <ul className="xb-item--meta list-unstyled ul_li">
-                                                <li><img src="/assets/img/icon/blog-icon01.svg" alt="icon" />chatbots tips</li>
-                                                <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" />April 27,2025 </li>
+                                                <li><img src="/assets/img/icon/blog-icon01.svg" alt="icon" />Secretary IT Visit — Mr. Zarrar Khan</li>
+                                                <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" />Visit </li>
                                             </ul>
                                             <h2 className="xb-item--title">
-                                                <a href="/blog-details">AI chatbots vs human support which is best for?..</a>
+                                                <a href="/blog-details">Mr. Zarrar Khan, Secretary IT from the Ministry ..</a>
                                             </h2>
                                         </div>
                                     </div>
@@ -76,18 +76,18 @@ export default function OurLatestNews() {
                                 <div className="xb-blog-item xb-small-blog-item wow fadeInUp" data-wow-delay="300ms" data-wow-duration="600ms">
                                     <div className="xb-item--inner img-hove-effect xb-border">
                                         <div className="xb-img">
-                                            <a href="/blog-details"><img src="/assets/img/blog/image copy 2.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/image copy 2.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/image copy 2.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/image copy 2.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
+                                            <a href="/blog-details"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
                                         </div>
                                         <div className="xb-item--holder">
                                             <ul className="xb-item--meta list-unstyled ul_li">
-                                                <li><img src="/assets/img/icon/blog-icon01.svg" alt="icon" />ai business</li>
-                                                <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" />march 17,2025 </li>
+                                                <li><img src="/assets/img/icon/blog-icon01.svg" alt="icon" />Crypto Minister</li>
+                                                <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" />Ceremony </li>
                                             </ul>
                                             <h2 className="xb-item--title">
-                                                <a href="/blog-details">How E-commerce brands use AI to increase sales..</a>
+                                                <a href="/blog-details">We at AXI Systems were honored to host Mr. Bilal Bin Saqib MBE ..</a>
                                             </h2>
                                         </div>
                                     </div>
