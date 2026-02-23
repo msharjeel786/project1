@@ -1,12 +1,12 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Navbar from '@/app/components/navbar';
 import Footer from '@/app/components/footer';
 import { events } from '@/app/data/events';
 
-export default function EventsPage() {
+function EventsContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -592,5 +592,29 @@ export default function EventsPage() {
         }
       `}</style>
     </div>
+  );
+}
+
+export default function EventsPage() {
+  return (
+    <Suspense fallback={
+      <div style={{ 
+        minHeight: '100vh', 
+        background: '#0a0f1e',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center' 
+      }}>
+        <div style={{
+          color: '#12ffac',
+          fontSize: '18px',
+          fontWeight: '600'
+        }}>
+          Loading events...
+        </div>
+      </div>
+    }>
+      <EventsContent />
+    </Suspense>
   );
 }
