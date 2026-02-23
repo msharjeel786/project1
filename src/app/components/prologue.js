@@ -127,8 +127,8 @@ export default function Prologue() {
                              </div> */}
 
 
-                             <div className="">
-                <img src={'assets/img/CEO.png'} alt="CEO Image" className="object-cover rounded-2xl" style={{height: 650, width: 750}} />
+                             <div className="overflow-hidden rounded-2xl">
+                <img src="/assets/img/CEO.png" alt="CEO Image" className="w-full h-auto max-w-full object-contain" style={{ maxHeight: 500 }} />
               </div>
 
 
