@@ -34,10 +34,10 @@ export default function OurLatestNews() {
                                 <div className="xb-blog-item wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">
                                     <div className="xb-item--inner img-hove-effect xb-border">
                                         <div className="xb-img">
-                                            <a href="/blog-details"><img src="/assets/img/blog/image.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/image.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/image.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/image.png    " alt="image" /></a>
+                                            <a href="/events"><img src="/assets/img/blog/image.png" alt="image" /></a>
+                                            <a href="/events"><img src="/assets/img/blog/image.png" alt="image" /></a>
+                                            <a href="/events"><img src="/assets/img/blog/image.png" alt="image" /></a>
+                                            <a href="/events"><img src="/assets/img/blog/image.png    " alt="image" /></a>
                                         </div>
                                         <div className="xb-item--holder">
                                             <ul className="xb-item--meta list-unstyled ul_li">
@@ -45,7 +45,7 @@ export default function OurLatestNews() {
                                                 <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" />Delegation</li>
                                             </ul>
                                             <h2 className="xb-item--title">
-                                                <a href="/blog-details">We at AXI Systems were honored to host a distinguished delegation at our headquarters..</a>
+                                                <a href="/events">We at AXI Systems were honored to host a distinguished delegation at our headquarters..</a>
                                             </h2>
                                         </div>
                                     </div>
@@ -55,10 +55,10 @@ export default function OurLatestNews() {
                                 <div className="xb-blog-item xb-small-blog-item wow fadeInUp" data-wow-delay="150ms" data-wow-duration="600ms">
                                     <div className="xb-item--inner img-hove-effect xb-border">
                                         <div className="xb-img">
-                                            <a href="/blog-details"><img src="/assets/img/blog/52.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/52.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/52.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/52.png" alt="image" /></a>
+                                            <a href="/events"><img src="/assets/img/blog/52.png" alt="image" /></a>
+                                            <a href="/events"><img src="/assets/img/blog/52.png" alt="image" /></a>
+                                            <a href="/events"><img src="/assets/img/blog/52.png" alt="image" /></a>
+                                            <a href="/events"><img src="/assets/img/blog/52.png" alt="image" /></a>
                                         </div>
                                         <div className="xb-item--holder">
                                             <ul className="xb-item--meta list-unstyled ul_li">
@@ -66,7 +66,7 @@ export default function OurLatestNews() {
                                                 <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" />Visit </li>
                                             </ul>
                                             <h2 className="xb-item--title">
-                                                <a href="/blog-details">Mr. Zarrar Khan, Secretary IT from the Ministry ..</a>
+                                                <a href="/events">Mr. Zarrar Khan, Secretary IT from the Ministry ..</a>
                                             </h2>
                                         </div>
                                     </div>
@@ -76,10 +76,10 @@ export default function OurLatestNews() {
                                 <div className="xb-blog-item xb-small-blog-item wow fadeInUp" data-wow-delay="300ms" data-wow-duration="600ms">
                                     <div className="xb-item--inner img-hove-effect xb-border">
                                         <div className="xb-img">
-                                            <a href="/blog-details"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
-                                            <a href="/blog-details"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
+                                            <a href="/events"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
+                                            <a href="/events"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
+                                            <a href="/events"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
+                                            <a href="/events"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
                                         </div>
                                         <div className="xb-item--holder">
                                             <ul className="xb-item--meta list-unstyled ul_li">
@@ -87,7 +87,7 @@ export default function OurLatestNews() {
                                                 <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" />Ceremony </li>
                                             </ul>
                                             <h2 className="xb-item--title">
-                                                <a href="/blog-details">We at AXI Systems were honored to host Mr. Bilal Bin Saqib MBE ..</a>
+                                                <a href="/events">We at AXI Systems were honored to host Mr. Bilal Bin Saqib MBE ..</a>
                                             </h2>
                                         </div>
                                     </div>
