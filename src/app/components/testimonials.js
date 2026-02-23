@@ -116,7 +116,7 @@ export default function Testimonials() {
                                 </div>
                             </div>
                         </div>
-                        <div className="swiper-slide">
+                        {/* <div className="swiper-slide">
                             <div className="xb-testimonial-item">
                                 <div className="xb-item--inner xb-border">
                                     <ul className="xb-item--rating list-unstyled ul_li">
@@ -134,8 +134,8 @@ export default function Testimonials() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="swiper-slide">
+                        </div> */}
+                        {/* <div className="swiper-slide">
                             <div className="xb-testimonial-item">
                                 <div className="xb-item--inner xb-border">
                                     <ul className="xb-item--rating list-unstyled ul_li">
@@ -172,7 +172,7 @@ export default function Testimonials() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
