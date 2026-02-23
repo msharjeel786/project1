@@ -1,5 +1,55 @@
+"use client";
+import { useState } from "react";
+
+
+ 
+
+
+
 export default function Testimonials() {
+     const [expanded, setExpanded] = useState({});
+
+  const toggleReadMore = (index) => {
+    setExpanded((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+
+  const renderText = (text, index) => {
+    const isExpanded = expanded[index];
+    const shortText =
+      text.length > 100 ? text.substring(0, 100) + "..." : text;
+
+    return (
+      <>
+        <p className="xb-item--content">
+          {isExpanded ? text : shortText}
+        </p>
+        {text.length > 100 && (
+          <button
+            onClick={() => toggleReadMore(index)}
+            style={{
+              background: "none",
+              border: "none",
+              color: "#007bff",
+              cursor: "pointer",
+              padding: 0,
+              fontWeight: "600",
+              marginBottom: "10px",
+            }}
+          >
+            {isExpanded ? "Read Less" : "Read More"}
+          </button>
+        )}
+      </>
+    );
+  };
+
+
   return (
+
+    
     <section id="testimonials" className="testimonial pb-150 bg_img" data-background="/assets/img/bg/testimonial-bg.png">
                 <div className="container">
                     <div className="sec-title sec-title-center tes-sec-title text-center mb-50">
@@ -10,18 +60,35 @@ export default function Testimonials() {
                 <div className="xb-testimonial-slider">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">
-                            <div className="xb-testimonial-item">
+                             <div className="xb-testimonial-item">
                                 <div className="xb-item--inner xb-border">
                                     <ul className="xb-item--rating list-unstyled ul_li">
                                         <li><i className="fa-solid fa-star-sharp"></i></li>
-                                        <li>GoodFirms</li>
+                                        <li>Clutch</li>
+                                        <li>4.7</li>
+                                    </ul>
+                                    {renderText("The team at Axi Technology is exceptional! From the initial consultation to the final delivery, they demonstrated technical brilliance and a client-first approach. The software solutions they provided have transformed the way we operate, making us more agile and future-ready. We’re thrilled to have found such a reliable partner.", 1)}
+                                    <div className="xb-item--author ul_li">
+                                        <div className="xb-item--avatar"><img src="/assets/img/avatar/avatar5.jpg" alt="avatar-image" /></div>
+                                        <div className="xb-item--holder">
+                                            <h3 className="xb-item--name">Dr. Sajid Qama</h3>
+                                            <span className="xb-item--desig">NTS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                           <div className="xb-testimonial-item">
+                                <div className="xb-item--inner xb-border">
+                                    <ul className="xb-item--rating list-unstyled ul_li">
+                                        <li><i className="fa-solid fa-star-sharp"></i></li>
+                                        <li>Clutch</li>
                                         <li>5.0</li>
                                     </ul>
-                                    <p className="xb-item--content">
-                                        Partnering with Axi Technology was one of the best decisions for our business. Their team seamlessly integrated cutting-edge AI solutions into our processes, boosting efficiency and innovation. They not only understood our needs but exceeded our expectations with their professionalism and expertise. Highly recommended!
-                                    </p>
+                                    {renderText("Axi Technology has been an absolute game-changer for our business. Their innovative AI solutions have not only streamlined our operations but also significantly boosted our efficiency and customer satisfaction. The team is incredibly knowledgeable, responsive, and dedicated to delivering top-notch results. We couldn't be happier with the partnership and look forward to achieving even greater success together!", 2)}
                                     <div className="xb-item--author ul_li">
-                                        <div className="xb-item--avatar"><img src="/assets/img/avatar/avatar1.jpg" alt="avatar-image" /></div>
+                                        <div className="xb-item--avatar"><img src="/assets/img/avatar/avatar3.jpg" alt="avatar-image" /></div>
                                         <div className="xb-item--holder">
                                             <h3 className="xb-item--name">M Sheheryar Sultan</h3>
                                             <span className="xb-item--desig">NHA</span>
@@ -36,32 +103,9 @@ export default function Testimonials() {
                                     <ul className="xb-item--rating list-unstyled ul_li">
                                         <li><i className="fa-solid fa-star-sharp"></i></li>
                                         <li>Clutch</li>
-                                        <li>4.9</li>
-                                    </ul>
-                                    <p className="xb-item--content">
-                                       The team at Axi Technology is exceptional! From the initial consultation to the final delivery, they demonstrated technical brilliance and a client-first approach. The software solutions they provided have transformed the way we operate, making us more agile and future-ready. We’re thrilled to have found such a reliable partner.
-                                    </p>
-                                    <div className="xb-item--author ul_li">
-                                        <div className="xb-item--avatar"><img src="/assets/img/avatar/avatar2.jpg" alt="avatar-image" /></div>
-                                        <div className="xb-item--holder">
-                                            <h3 className="xb-item--name">Dr. Sajid Qama</h3>
-                                            <span className="xb-item--desig">NTS</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="xb-testimonial-item">
-                                <div className="xb-item--inner xb-border">
-                                    <ul className="xb-item--rating list-unstyled ul_li">
-                                        <li><i className="fa-solid fa-star-sharp"></i></li>
-                                        <li>Clutch</li>
                                         <li>5.0</li>
                                     </ul>
-                                    <p className="xb-item--content">
-                                       Gelecek Solution is recognized as a pioneering force in the tech industry, dedicated to delivering innovative software solutions that enable businesses to achieve their goals efficiently and effectively. Their unwavering commitment to quality and customer satisfaction distinguishes them as a trusted partner for organizations seeking to enhance their digital capabilities.
-                                    </p>
+                                    {renderText("Gelecek Solution is recognized as a pioneering force in the tech industry, dedicated to delivering innovative software solutions that enable businesses to achieve their goals efficiently and effectively. Their unwavering commitment to quality and customer satisfaction distinguishes them as a trusted partner for organizations seeking to enhance their digital capabilities.", 2)}
                                     <div className="xb-item--author ul_li">
                                         <div className="xb-item--avatar"><img src="/assets/img/avatar/avatar3.jpg" alt="avatar-image" /></div>
                                         <div className="xb-item--holder">
@@ -80,9 +124,7 @@ export default function Testimonials() {
                                         <li>GoodFirms</li>
                                         <li>5.0</li>
                                     </ul>
-                                    <p className="xb-item--content">
-                                        "The AI chatbot they developed has transformed our customer service. We now handle 70% of queries with higher customer satisfaction!"
-                                    </p>
+                                    {renderText("The AI chatbot they developed has transformed our customer service. We now handle 70% of queries with higher customer satisfaction!", 0)}
                                     <div className="xb-item--author ul_li">
                                         <div className="xb-item--avatar"><img src="/assets/img/avatar/avatar4.jpg" alt="avatar-image" /></div>
                                         <div className="xb-item--holder">
@@ -101,14 +143,12 @@ export default function Testimonials() {
                                         <li>Clutch</li>
                                         <li>4.7</li>
                                     </ul>
-                                    <p className="xb-item--content">
-                                        "We gained deep insights into customer behavior and performance. Their analytics made our decision-making sharper and more confident."
-                                    </p>
+                                    {renderText("The team at Axi Technology is exceptional! From the initial consultation to the final delivery, they demonstrated technical brilliance and a client-first approach. The software solutions they provided have transformed the way we operate, making us more agile and future-ready. We’re thrilled to have found such a reliable partner.", 1)}
                                     <div className="xb-item--author ul_li">
                                         <div className="xb-item--avatar"><img src="/assets/img/avatar/avatar5.jpg" alt="avatar-image" /></div>
                                         <div className="xb-item--holder">
-                                            <h3 className="xb-item--name">Sebastian Clark</h3>
-                                            <span className="xb-item--desig">Director - Finexa Capital</span>
+                                            <h3 className="xb-item--name">Dr. Sajid Qama</h3>
+                                            <span className="xb-item--desig">NTS</span>
                                         </div>
                                     </div>
                                 </div>
@@ -122,14 +162,12 @@ export default function Testimonials() {
                                         <li>Clutch</li>
                                         <li>5.0</li>
                                     </ul>
-                                    <p className="xb-item--content">
-                                        "Their automation solutions saved us countless hours. Tasks that took days are now completed in minutes. The ROI was almost immediate."
-                                    </p>
+                                    {renderText("Axi Technology has been an absolute game-changer for our business. Their innovative AI solutions have not only streamlined our operations but also significantly boosted our efficiency and customer satisfaction. The team is incredibly knowledgeable, responsive, and dedicated to delivering top-notch results. We couldn't be happier with the partnership and look forward to achieving even greater success together!", 2)}
                                     <div className="xb-item--author ul_li">
                                         <div className="xb-item--avatar"><img src="/assets/img/avatar/avatar3.jpg" alt="avatar-image" /></div>
                                         <div className="xb-item--holder">
-                                            <h3 className="xb-item--name">Sebastian Clark</h3>
-                                            <span className="xb-item--desig">Manager - SwiftLogix</span>
+                                            <h3 className="xb-item--name">M Sheheryar Sultan</h3>
+                                            <span className="xb-item--desig">NHA</span>
                                         </div>
                                     </div>
                                 </div>

@@ -12,6 +12,7 @@ import OurMainServices from './components/ourMainServices'
 import WhoWeAre from './components/whoWeAre'
 import Hero from './components/hero'
 import Navbar from './components/navbar'
+import Prologue from './components/prologue'
 
 export default function Home() {
     useEffect(() => {
@@ -57,6 +58,7 @@ export default function Home() {
                 <div className="body-overlay"></div>
                 <main>
                    <Hero/>
+                   <Prologue/>
                    <WhoWeAre/>
                    <OurMainServices/>
                     <div className="feature-bg">

@@ -653,24 +653,16 @@
 		let pr = gsap.matchMedia();
 		pr.add("(min-width: 767px)", () => {
 			let otherSections = document.querySelectorAll('.des-portfolio-panel')
-			otherSections.forEach((section, index) => {
-				gsap.set(otherSections, {
-					scale: 1,
-				});
+			otherSections.forEach((section) => {
 				tl.to(section, {
-					scale: .8,
-					scrollTrigger: {
-						trigger: section,
-						pin: section,
-						scrub: 1,
-						start: 'top 0',
-						end: "bottom 60%",
-						endTrigger: '.des-portfolio-wrap',
-						pinSpacing: false,
-						markers: false,
-					},
-				})
-			})
+					x: "0",
+					y: "0",
+					opacity: 1,
+					duration: 0.7,
+					stagger: 0.2,
+					ease: "power1.out",
+				});
+			});
 		});
 	}
 	ptojectScale();
@@ -752,34 +744,14 @@
 			e.siblings().removeClass("current").addClass("mleave");
 		}
 
-		$(".ai-download-book-list .list").on("mouseenter", function () {
+		$(".ai-download-book-list .list").off("mouseenter").on("mouseenter", function () {
 			var e = $(this);
 			var index = e.index();
 
 			activeBookList(e);
 			$(".ai-download-book .book-item").removeClass("active").eq(index).addClass("active");
 		});
-
-		$(".ai-download-book-list").on("mouseleave", function () {
-			element = $(".ai-download-book-list .current");
-			var index = element.index();
-
-			activeBookList(element);
-			$(".ai-download-book .book-item").removeClass("active").eq(index).addClass("active");
-			element.siblings().removeClass("mleave");
-		});
-
-		$(".ai-download-book-list .list").on("click", function () {
-			$(".ai-download-book-list .list").removeClass("current");
-			$(this).addClass("current");
-
-			var index = $(this).index();
-			$(".ai-download-book .book-item").removeClass("active").eq(index).addClass("active");
-		});
-
-		activeBookList(element);
 	}
-
 	download_book_animation();
 
 

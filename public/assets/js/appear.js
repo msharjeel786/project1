@@ -105,7 +105,11 @@
     // force elements's appearance check
     force_appear: function () {
       if (checkBinded) {
-        process();
+        // Add a debounce to limit the frequency of process calls
+        clearTimeout(this.debounceTimer);
+        this.debounceTimer = setTimeout(() => {
+          process();
+        }, 100);
         return true;
       }
       return false;

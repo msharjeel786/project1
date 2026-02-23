@@ -211,7 +211,11 @@
       _proto.emit = function emit(event) {
         var callbacks = this.events[event] || [];
         for (var i = 0, length = callbacks.length; i < length; i++) {
-          callbacks[i].apply(callbacks, [].slice.call(arguments, 1));
+          try {
+            callbacks[i].apply(callbacks, [].slice.call(arguments, 1));
+          } catch (error) {
+            console.error("Error in event callback:", error);
+          }
         }
       };
       _proto.on = function on(event, cb) {
@@ -775,4 +779,3 @@
     return Lenis;
   
   }));
-  
