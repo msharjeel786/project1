@@ -38,7 +38,7 @@ export default function OurProjects() {
                                     <h2 className="xb-item--title">PakOS - Secure, Lightweight, and Modern Linux</h2>
                                     <p className="xb-item--content">PakOS is a Debian-based Linux distribution built for speed, security, and simplicity. Designed for users in Pakistan but ready for everyone, it delivers a fast, resource-efficient LXQt desktop that runs smoothly on both modern and older PCs.</p>
                                        <div class="xb-item---btn mt-70">
-                                        <a class="thm-btn agency-btn" href="#tools">
+                                        <a class="thm-btn agency-btn" href="https://axitechnologies.ai/pak-os-linux/">
                                             <span class="text">
                                                 read more
                                             </span>
@@ -61,7 +61,7 @@ export default function OurProjects() {
                                     <h2 className="xb-item--title">Advanced USB Security Solutions</h2>
                                     <p className="xb-item--content">Protect your organization from USB-based threats with enterprise-grade security, behavioral analysis, and comprehensive access control..</p>
                                        <div class="xb-item---btn mt-70">
-                                        <a class="thm-btn agency-btn" href="#tools">
+                                        <a class="thm-btn agency-btn" href="https://axitechnologies.ai/guardyusb/">
                                             <span class="text">
                                                 read more
                                             </span>
