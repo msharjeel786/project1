@@ -1,0 +1,273 @@
+/* Load after main.css so these overrides apply.
+   Ensures Our Products cards scroll at 150% zoom so "read more" is visible. */
+
+.project-tools .xb-project-item {
+  overflow: visible !important;
+}
+.project-tools .xb-project-content {
+  overflow: visible !important;
+  min-width: 0;
+}
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll {
+  display: block !important;
+  max-height: min(55vh, 480px) !important;
+  min-height: 280px !important;
+  min-width: 0 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding-bottom: 56px !important;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.1);
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll .xb-item--title {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+}
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll .xb-item--content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll .xb-item---btn,
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll .xb-item--btn {
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Disabled "read more" when product has no link */
+.project-tools .read-more-disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
+  transition: none !important;
+  animation: none !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.project-tools .read-more-disabled .text,
+.project-tools .read-more-disabled .arrow {
+  background: rgba(255, 255, 255, 0.2) !important;
+  transition: none !important;
+}
+.project-tools .read-more-disabled .arrow-icon {
+  background: rgba(255, 255, 255, 0.25) !important;
+  transition: none !important;
+}
+.project-tools .read-more-disabled .arrow-icon svg {
+  transition: none !important;
+}
+
+/* Testimonial avatars: circular and consistent for both generated and real images */
+.xb-testimonial-item .xb-item--avatar {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+.xb-testimonial-item .xb-item--avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Nav: do not highlight Home when on Events or Blog page */
+#xb-header-area[data-pathname="/events"] .main-menu > ul > li:first-child > a,
+#xb-header-area[data-pathname="/events"] .main-menu > ul > li:first-child > a span::after,
+#xb-header-area[data-pathname^="/blog"] .main-menu > ul > li:first-child > a,
+#xb-header-area[data-pathname^="/blog"] .main-menu > ul > li:first-child > a span::after {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+#xb-header-area[data-pathname="/events"] .main-menu > ul > li:first-child.active > a span::after,
+#xb-header-area[data-pathname^="/blog"] .main-menu > ul > li:first-child.active > a span::after {
+  background: #15192f !important;
+  color: var(--color-white) !important;
+  border-color: #373946 !important;
+}
+
+/* Force Home nav item to never show green when marked inactive (events/blog page) */
+.header-area .main-menu > ul > li.xb-nav-home-inactive > a,
+.header-area .main-menu > ul > li.xb-nav-home-inactive > a span::after,
+.header-area .main-menu > ul > li.xb-nav-home-inactive.active > a,
+.header-area .main-menu > ul > li.xb-nav-home-inactive.active > a span::after,
+.xb-header-nav .xb-menu-primary > li.xb-nav-home-inactive > a,
+.xb-header-nav .xb-menu-primary > li.xb-nav-home-inactive > a span::after,
+.xb-header-nav .xb-menu-primary > li.xb-nav-home-inactive.active > a,
+.xb-header-nav .xb-menu-primary > li.xb-nav-home-inactive.active > a span::after {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+.header-area .main-menu > ul > li.xb-nav-home-inactive > a span::after,
+.header-area .main-menu > ul > li.xb-nav-home-inactive.active > a span::after,
+.xb-header-nav .xb-menu-primary > li.xb-nav-home-inactive > a span::after,
+.xb-header-nav .xb-menu-primary > li.xb-nav-home-inactive.active > a span::after {
+  background: #15192f !important;
+  color: var(--color-white) !important;
+  border-color: #373946 !important;
+}
+
+/* --- xb-nav: flat nav with custom active highlight (desktop + mobile) --- */
+.xb-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.main-menu .xb-nav {
+  gap: 2px;
+}
+.xb-nav__item {
+  margin: 0;
+  padding: 0;
+}
+.xb-nav__link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  border-radius: 6px;
+}
+.xb-nav__link:hover {
+  color: #fff;
+}
+.xb-nav__link--active,
+.xb-nav__item--active .xb-nav__link {
+  color: #fff;
+  border-bottom-color: var(--thm-primary, #00d4aa);
+  background: #02ff97;
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.2), inset 0 4px 8px rgba(0, 0, 0, 0.35);
+}
+.xb-nav__item.xb-nav-home-inactive .xb-nav__link {
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom-color: transparent;
+}
+.xb-nav__item.xb-nav-home-inactive .xb-nav__link:hover {
+  color: #fff;
+}
+
+/* Mobile slide-out nav */
+.xb-nav--mobile {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+}
+.xb-header-nav .xb-nav--mobile .xb-nav__item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.xb-header-nav .xb-nav--mobile .xb-nav__link {
+  display: block;
+  padding: 0.85rem 1rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+.xb-header-nav .xb-nav--mobile .xb-nav__link--active,
+.xb-header-nav .xb-nav--mobile .xb-nav__item--active .xb-nav__link {
+  color: #fff;
+
+
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.2), inset 0 4px 6px rgba(0, 0, 0, 0.35);
+}
+.xb-header-nav .xb-nav--mobile .xb-nav__item.xb-nav-home-inactive .xb-nav__link {
+  border-bottom-color: transparent;
+}
+
+/* Industries belt (marquee): slower on mobile */
+@media (max-width: 991px) {
+  .xb-industries-marquee .marquee-horizontal {
+    animation-duration: 45s !important;
+    -webkit-animation-duration: 45s !important;
+  }
+  .xb-industries-marquee .marquee-horizontal-bottom {
+    animation-duration: 50s !important;
+    -webkit-animation-duration: 50s !important;
+  }
+  /* Decrease gap between rows and items on mobile/tablet */
+  .xb-industries-marquee .xb-indus-marquee-inner {
+    gap: 6px !important;
+  }
+  .xb-industries-marquee .xb-marquee-items {
+    gap: 4px !important;
+  }
+}
+
+/* Smaller, professional logo in belt on mobile */
+@media (max-width: 767px) {
+  .xb-industries-logo {
+    max-width: 42% !important;
+    padding: 0 8px;
+  }
+  .xb-industries-logo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+@media (max-width: 575px) {
+  .xb-industries-logo {
+    max-width: 38% !important;
+  }
+}
+
+/* Centralize logo in belt on all breakpoints (mobile, tablet, desktop) */
+.xb-industries-marquee .xb-indus-marquee-inner {
+  align-items: center;
+}
+.xb-industries-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.xb-industries-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Who We Are: company logos belt — 100px margin on mobile, 170px on desktop */
+@media (max-width: 991px) {
+  .xb-about-img-wrap .xb-about-img-item {
+    margin-right: 100px !important;
+  }
+}
+
+/* CEO image: stay behind mobile sidebar (sidebar z-index is 1010) */
+.xb-ceo-image-wrap {
+  z-index: 1 !important;
+  isolation: isolate;
+}
+@media (max-width: 991px) {
+  .xb-ceo-image-wrap {
+    z-index: 0 !important;
+    position: relative;
+  }
+}

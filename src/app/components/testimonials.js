@@ -107,7 +107,7 @@ export default function Testimonials() {
                                     </ul>
                                     {renderText("AXI Systems is recognized as a pioneering force in the tech industry, dedicated to delivering innovative software solutions that enable businesses to achieve their goals efficiently and effectively. Their unwavering commitment to quality and customer satisfaction distinguishes them as a trusted partner for organizations seeking to enhance their digital capabilities.", 2)}
                                     <div className="xb-item--author ul_li">
-                                        <div className="xb-item--avatar"><img src="https://ui-avatars.com/api/?name=Hisham+Sarwar&size=80&background=fef3c7&color=b45309" alt="avatar" /></div>
+                                        <div className="xb-item--avatar"><img src="/assets/img/testimonial/hisham.png" alt="avatar" /></div>
                                         <div className="xb-item--holder">
                                             <h3 className="xb-item--name">Hisham Sarwar</h3>
                                             <span className="xb-item--desig">CEO of Innovista</span>

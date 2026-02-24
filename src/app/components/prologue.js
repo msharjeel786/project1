@@ -36,7 +36,7 @@ export default function Prologue() {
               </h4> */}
               <blockquote className="text-muted-foreground mb-8 border-l-4 border-primary pl-6 italic">
                 <p>
-                  At AXI Systems, we believe technology is more than a tool — it's a bridge to new possibilities. Guided by innovation, 
+                  At AXI Systems, we believe technology is more than a tool  it's a bridge to new possibilities. Guided by innovation, 
                   partnerships, and bold action, we transform ideas into reality and help businesses thrive in the digital era.
                 </p>
                 <br />
@@ -127,16 +127,16 @@ export default function Prologue() {
                              </div> */}
 
 
-                             <div className="position-relative d-flex justify-content-center align-items-center" style={{ minHeight: 500 }}>
-                <div className="position-absolute d-flex justify-content-center align-items-center" style={{ width: '100%', height: '100%' }}>
-                  <div className="position-absolute rounded-circle" style={{ width: 400, height: 400, border: '3px solid rgba(0, 164, 175, 0.5)', boxShadow: '0 0 30px rgba(0, 164, 175, 0.2)', zIndex: 0 }} />
-                  <div className="position-absolute rounded-circle" style={{ width: 340, height: 340, border: '3px solid rgba(44, 50, 254, 0.5)', zIndex: 1 }} />
-                  <div className="position-absolute rounded-circle" style={{ width: 280, height: 280, border: '2px solid rgba(255, 255, 255, 0.2)', background: 'radial-gradient(circle, rgba(44, 50, 254, 0.15) 0%, transparent 70%)', zIndex: 2 }} />
-                </div>
-                <div className="position-relative" style={{ zIndex: 3 }}>
-                  <img src="/assets/img/CEO.png" alt="CEO Image" className="w-100 h-auto object-contain" style={{ maxHeight: 500 }} />
-                </div>
-              </div>
+                             <div className="xb-ceo-image-wrap position-relative d-flex justify-content-center align-items-center" style={{ minHeight: 500, zIndex: 1, isolation: 'isolate' }}>
+                                <div className="position-absolute d-flex justify-content-center align-items-center" style={{ width: '100%', height: '100%' }}>
+                                  <div className="position-absolute rounded-circle" style={{ width: 320, height: 320, background: 'rgba(0, 164, 175, 0.25)', filter: 'blur(60px)', zIndex: 0 }} />
+                                  <div className="position-absolute rounded-circle" style={{ width: 280, height: 280, background: 'rgba(44, 50, 254, 0.2)', filter: 'blur(50px)', zIndex: 1 }} />
+                                  <div className="position-absolute rounded-circle" style={{ width: 220, height: 220, background: 'rgba(2, 255, 151, 0.15)', filter: 'blur(40px)', zIndex: 2 }} />
+                                </div>
+                                <div className="position-relative" style={{ zIndex: 3 }}>
+                                  <img src="/assets/img/CEO.png" alt="CEO Image" className="w-100 h-auto object-contain" style={{ maxHeight: 500 }} />
+                                </div>
+                              </div>
 
 
 

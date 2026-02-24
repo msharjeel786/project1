@@ -1,5 +1,6 @@
 import "./globals.css";
 import Script from "next/script";
+import Navbar from "@/app/components/navbar";
 
 export const metadata = {
   title: "Empowering Pakistan's Digital Future | AXI SYSTEMS",
@@ -23,8 +24,10 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
         <link rel="stylesheet" href="/assets/css/jquery-ui.css" />
         <link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/overrides.css" />
       </head>
       <body className="ai-agency">
+        <Navbar />
         {children}
         <Script src="/assets/js/jquery-3.7.1.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
