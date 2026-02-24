@@ -41,7 +41,7 @@ export default function Hero() {
               </h2>
               <p className="sub-title scale-animation wow">Driving innovation through technology, governance, and human capital to build a secure and connected digital ecosystem.</p>
               <div className="hero-btn scale-animation wow">
-                <a className="thm-btn agency-btn" href="#about">
+                <a className="thm-btn agency-btn" href="#services">
                   <span className="text">
                     Explore more solutions
                   </span>

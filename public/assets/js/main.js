@@ -67,8 +67,8 @@
 					$(".xb-header-area-sticky.xb-sticky-stb").removeClass("xb-header-fixed");
 				}
 
-				// Add or remove classes for sticky header based on scroll direction
-				if (scrollDirection === "up" && lastScrollPosition > 100) {
+				// Keep the sticky header visible after crossing the threshold
+				if (lastScrollPosition > 100) {
 					$(".xb-header-area-sticky.xb-sticky-stt").addClass("xb-header-fixed");
 				} else {
 					$(".xb-header-area-sticky.xb-sticky-stt").removeClass("xb-header-fixed");
