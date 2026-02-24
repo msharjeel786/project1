@@ -11,7 +11,6 @@ import WhyChoose from './components/whyChoose'
 import OurMainServices from './components/ourMainServices'
 import WhoWeAre from './components/whoWeAre'
 import Hero from './components/hero'
-import Navbar from './components/navbar'
 import Prologue from './components/prologue'
 
 export default function Home() {
@@ -54,7 +53,6 @@ export default function Home() {
             </div>
 
             <div className="body_wrap o-clip">
-             <Navbar/>
                 <div className="body-overlay"></div>
                 <main>
                    <Hero/>

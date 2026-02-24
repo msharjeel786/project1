@@ -8,12 +8,12 @@ export default function Prologue() {
 
       <section  className="contact-section pt-150 pb-140 bg_img" data-background="/assets/img/bg/contact-bg.png"> 
                  <div className="container">
-                     <div className="row mt-none-50 justify-content-center">
-                         <div className="col-lg-6 mt-50">
+<div className="row mt-none-50 justify-content-center align-items-center">
+                     <div className="col-lg-7 mt-50">
                              <div className="xb-content-wrap">
                                  <div className="sec-title contact-sec-title">
-                                     <span className="sub-title mb-15">Prologue</span>
-                                     <h2 className="title horizontal-shape">Note from the Chief Executive Officer</h2>
+                                     <span className="sub-title mb-15">CEO Message</span>
+                                     <h2 className="title horizontal-shape">Note from CEO</h2>
                                  </div>
                                  {/* <div className="xb-contact-conent wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="600ms">
                                      <div className="xb-contact-inner ul_li_between">
@@ -36,7 +36,7 @@ export default function Prologue() {
               </h4> */}
               <blockquote className="text-muted-foreground mb-8 border-l-4 border-primary pl-6 italic">
                 <p>
-                  At AXI Systems, we believe technology is more than a tool — it's a bridge to new possibilities. Guided by innovation, 
+                  At AXI Systems, we believe technology is more than a tool  it's a bridge to new possibilities. Guided by innovation, 
                   partnerships, and bold action, we transform ideas into reality and help businesses thrive in the digital era.
                 </p>
                 <br />
@@ -49,7 +49,7 @@ export default function Prologue() {
                   As we look to the future, we remain committed to innovation, global collaboration, and nurturing future IT leaders. Together with our clients, teams, and partners, we're shaping a digital, sustainable, and opportunity-rich future.
                 </p>
               </blockquote>
-               <h4 className="font-display font-semibold text-foreground mb-4">
+               <h4 className="font-display font-semibold text-foreground mb-4 text-end">
               Muhammad Asim Ishaq
               </h4>
              
@@ -59,7 +59,7 @@ export default function Prologue() {
 
                              </div>
                          </div>
-                         <div className="col-lg-6 mt-50">
+                         <div className="col-lg-5 mt-50">
                              {/* <div className="xb-contact-form xb-border">
                                  <div className="form-heading text-center mb-30">
                                      <h3 className="title">Ready to collaborate with us?</h3>
@@ -127,9 +127,16 @@ export default function Prologue() {
                              </div> */}
 
 
-                             <div className="overflow-hidden rounded-2xl">
-                <img src="/assets/img/CEO.png" alt="CEO Image" className="w-full h-auto max-w-full object-contain" style={{ maxHeight: 500 }} />
-              </div>
+                             <div className="xb-ceo-image-wrap position-relative d-flex justify-content-center align-items-center" style={{ minHeight: 500, zIndex: 1, isolation: 'isolate' }}>
+                                <div className="position-absolute d-flex justify-content-center align-items-center" style={{ width: '100%', height: '100%' }}>
+                                  <div className="position-absolute rounded-circle" style={{ width: 320, height: 320, background: 'rgba(0, 164, 175, 0.25)', filter: 'blur(60px)', zIndex: 0 }} />
+                                  <div className="position-absolute rounded-circle" style={{ width: 280, height: 280, background: 'rgba(44, 50, 254, 0.2)', filter: 'blur(50px)', zIndex: 1 }} />
+                                  <div className="position-absolute rounded-circle" style={{ width: 220, height: 220, background: 'rgba(2, 255, 151, 0.15)', filter: 'blur(40px)', zIndex: 2 }} />
+                                </div>
+                                <div className="position-relative" style={{ zIndex: 3 }}>
+                                  <img src="/assets/img/CEO.png" alt="CEO Image" className="w-100 h-auto object-contain" style={{ maxHeight: 500 }} />
+                                </div>
+                              </div>
 
 
 

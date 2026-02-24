@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
-import Navbar from '@/app/components/navbar';
 import Footer from '@/app/components/footer';
 import { events } from '@/app/data/events';
 
@@ -41,8 +40,6 @@ function EventsContent() {
 
   return (
     <div style={{ minHeight: '100vh', background: '#0a0f1e' }}>
-      <Navbar />
-
       {/* Hero Section with Gradient */}
       <section style={{
         position: 'relative',

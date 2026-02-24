@@ -1,4 +1,5 @@
 .xb-project-content {
+    overflow: visible;
     .xb-item {
         &--inner {
             width: 740px;
@@ -9,6 +10,30 @@
             backdrop-filter: blur(40px);
             box-shadow: 0 4px 24px -1px rgba(28, 9, 61, 0.2);
             background: linear-gradient(209deg, rgba(0, 2, 15, 0.6) 0%, rgba(0, 2, 15, 0.6) 100%);
+            &.xb-project-card-scroll {
+                display: block !important;
+                max-height: 60vh !important;
+                min-height: 320px;
+                overflow-y: auto !important;
+                overflow-x: hidden !important;
+                padding-bottom: 48px !important;
+                scroll-behavior: smooth;
+                scrollbar-width: thin;
+                scrollbar-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.1);
+            }
+            &.xb-project-card-scroll::-webkit-scrollbar {
+                width: 8px;
+            }
+            &.xb-project-card-scroll::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            &.xb-project-card-scroll::-webkit-scrollbar-thumb {
+                background: rgba(255, 255, 255, 0.4);
+                border-radius: 4px;
+            }
+            &.xb-project-card-scroll::-webkit-scrollbar-thumb:hover {
+                background: rgba(255, 255, 255, 0.6);
+            }
             @include respond(laptop) {
                 padding: 55px 45px 60px 60px;
             }
@@ -429,4 +454,34 @@
         bottom: -30px;
         background: var(--color-secondary);
     }
+}
+
+/* project-tools (Our Products grid): allow card scroll so "read more" is visible at 150% zoom */
+.project-tools .xb-project-item {
+    overflow: visible !important;
+}
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll {
+    display: block !important;
+    max-height: 60vh !important;
+    min-height: 320px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    padding-bottom: 48px !important;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.1);
+}
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+}
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+.project-tools .xb-project-content .xb-item--inner.xb-project-card-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7);
 }

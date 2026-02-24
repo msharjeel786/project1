@@ -57,8 +57,8 @@ export default function ContactUs() {
                                              </div>
                                          </div>
                                          <div className="col-lg-6 col-md-6 mt-20">
-                                             <div className="xb-input-field xb-select-file">
-                                                 <input type="file" required />
+                                            <div className="xb-input-field xb-select-file">
+                                                <input type="file" />
                                                  <img src="/assets/img/icon/upload-icon.svg" alt="icon" />
                                                  <span>Attach file...</span>
                                              </div>
