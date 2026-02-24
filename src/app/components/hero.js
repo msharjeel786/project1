@@ -1,9 +1,89 @@
-import Link from "next/link";
+"use client";
+
+import { useState, useEffect, useRef } from "react";
 import Arrow from '../../svg/arrow.svg'
 
+const CAROUSEL_IMAGES = Array.from({ length: 17 }, (_, i) => `/carousel/${i + 1}.png`);
+const IMAGE_DURATION_MS = 3500;
+const FADE_DURATION_MS = 600;
 
 export default function Hero() {
- 
+  const [phase, setPhase] = useState("video");
+  const [imageIndex, setImageIndex] = useState(0);
+  const [leaveIndex, setLeaveIndex] = useState(undefined);
+  const [fadingOutImages, setFadingOutImages] = useState(false);
+  const [fadeActive, setFadeActive] = useState(false);
+  const [panelVisible, setPanelVisible] = useState(false);
+  const videoRef = useRef(null);
+
+  const onVideoEnded = () => {
+    setPhase("images");
+    setImageIndex(0);
+    setLeaveIndex(undefined);
+    setPanelVisible(false);
+  };
+
+  useEffect(() => {
+    if (phase !== "images") return;
+    const t = setTimeout(() => {
+      if (imageIndex < 16) {
+        setImageIndex((i) => i + 1);
+      } else {
+        setFadingOutImages(true);
+        setTimeout(() => {
+          setPhase("video");
+          setImageIndex(0);
+          setLeaveIndex(undefined);
+          setFadingOutImages(false);
+          if (videoRef.current) {
+            videoRef.current.currentTime = 0;
+            videoRef.current.play().catch(() => {});
+          }
+        }, FADE_DURATION_MS);
+      }
+    }, IMAGE_DURATION_MS);
+    return () => clearTimeout(t);
+  }, [phase, imageIndex]);
+
+  useEffect(() => {
+    if (phase !== "images") return;
+    setLeaveIndex(imageIndex > 0 ? imageIndex - 1 : undefined);
+    setFadeActive(false);
+    const t = setTimeout(() => setLeaveIndex(undefined), FADE_DURATION_MS);
+    return () => clearTimeout(t);
+  }, [phase, imageIndex]);
+
+  useEffect(() => {
+    if (leaveIndex === undefined) {
+      setFadeActive(false);
+      return;
+    }
+    const raf = requestAnimationFrame(() => setFadeActive(true));
+    return () => cancelAnimationFrame(raf);
+  }, [leaveIndex]);
+
+  useEffect(() => {
+    if (phase === "images" && !fadingOutImages) {
+      const raf = requestAnimationFrame(() => setPanelVisible(true));
+      return () => cancelAnimationFrame(raf);
+    }
+    if (phase === "video") setPanelVisible(false);
+  }, [phase, fadingOutImages]);
+
+  const showImagesPanel = phase === "images" || fadingOutImages;
+  const imagesPanelOpacity =
+    phase === "images" && !fadingOutImages && panelVisible ? 1 : 0;
+
+  const bgStyle = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    zIndex: -1,
+  };
+  const fadeTransition = `opacity ${FADE_DURATION_MS / 1000}s ease`;
 
   return (
     <section
@@ -12,15 +92,66 @@ export default function Hero() {
       style={{ position: "relative", overflow: "hidden" }}
     >
       <video
+        ref={videoRef}
         autoPlay
-        loop
+        loop={false}
         muted
         playsInline
-        style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: -1 }}
+        onEnded={onVideoEnded}
+        style={{
+          ...bgStyle,
+          opacity: phase === "video" ? 1 : 0,
+          pointerEvents: phase === "video" ? "auto" : "none",
+          transition: fadeTransition,
+        }}
       >
         <source src="/assets/img/bg/Futuristic_City_and_Business_District.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      {showImagesPanel && (
+        <div
+          style={{
+            ...bgStyle,
+            opacity: imagesPanelOpacity,
+            transition: fadeTransition,
+            display: "flex",
+            alignItems: "stretch",
+            justifyContent: "stretch",
+          }}
+          aria-hidden="true"
+        >
+          {leaveIndex !== undefined && (
+            <img
+              key={`leave-${leaveIndex}`}
+              src={CAROUSEL_IMAGES[leaveIndex]}
+              alt=""
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                opacity: fadeActive ? 0 : 1,
+                transition: fadeTransition,
+              }}
+            />
+          )}
+          <img
+            key={`current-${imageIndex}`}
+            src={CAROUSEL_IMAGES[imageIndex]}
+            alt=""
+            style={{
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              opacity: leaveIndex !== undefined ? (fadeActive ? 1 : 0) : 1,
+              transition: fadeTransition,
+            }}
+          />
+        </div>
+      )}
       <div
         style={{
           position: "absolute",

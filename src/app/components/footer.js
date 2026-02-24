@@ -32,7 +32,23 @@ export default function Footer() {
                     <h2 className="title"><a href="#testimonials">News</a></h2>
                 </div>
             </div>
+            <div className="xb-footer-follow-wrap">
+                <h3 className="xb-footer-follow-title">Follow us</h3>
+                <p className="xb-footer-follow-sub">Follow us on Instagram, Facebook & more — stay connected.</p>
+            </div>
             <div className="xb-social-media-wrap">
+                <div className="xb-social-media-item ul_li_between">
+                    <div className="xb-item--holder ul_li">
+                        <div className="xb-item--icon">
+                            <i className="fa-brands fa-instagram"></i>
+                        </div>
+                        <span className="xb-item--name">Instagram</span>
+                    </div>
+                    <span className="xb-item--arrow">
+                        <Arrow width={28} height={28} />
+                    </span>
+                    <a className="xb-overlay" href="https://www.instagram.com/axisystemspk/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a>
+                </div>
                 <div className="xb-social-media-item ul_li_between">
                     <div className="xb-item--holder ul_li">
                         <div className="xb-item--icon">
@@ -41,22 +57,21 @@ export default function Footer() {
                         <span className="xb-item--name">Facebook</span>
                     </div>
                     <span className="xb-item--arrow">
-                    <Arrow width={28} height={28} /> 
+                        <Arrow width={28} height={28} />
                     </span>
-                    <a className="xb-overlay" href="#!"></a>
+                    <a className="xb-overlay" href="https://www.facebook.com/axisystemspk" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a>
                 </div>
                 <div className="xb-social-media-item ul_li_between">
                     <div className="xb-item--holder ul_li">
                         <div className="xb-item--icon">
-                           <TwitterLogo width={19} height={19} />
+                            <TwitterLogo width={19} height={19} />
                         </div>
                         <span className="xb-item--name">Twitter</span>
                     </div>
                     <span className="xb-item--arrow">
-                                           <Arrow width={28} height={28} /> 
-
+                        <Arrow width={28} height={28} />
                     </span>
-                    <a className="xb-overlay" href="#!"></a>
+                    <a className="xb-overlay" href="https://twitter.com/axisystemspk" target="_blank" rel="noopener noreferrer" aria-label="Twitter"></a>
                 </div>
                 <div className="xb-social-media-item ul_li_between">
                     <div className="xb-item--holder ul_li">
@@ -66,23 +81,21 @@ export default function Footer() {
                         <span className="xb-item--name">LinkedIn</span>
                     </div>
                     <span className="xb-item--arrow">
-                                           <Arrow width={28} height={28} /> 
-
+                        <Arrow width={28} height={28} />
                     </span>
-                    <a className="xb-overlay" href="https://pk.linkedin.com/company/axi-technologiespak"></a>
+                    <a className="xb-overlay" href="https://pk.linkedin.com/company/axi-technologiespak" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"></a>
                 </div>
                 <div className="xb-social-media-item ul_li_between">
                     <div className="xb-item--holder ul_li">
                         <div className="xb-item--icon">
-                            <i className="fa-brands fa-square-youtube"></i>
+                            <i className="fa-brands fa-youtube"></i>
                         </div>
-                        <span className="xb-item--name">youtube</span>
+                        <span className="xb-item--name">YouTube</span>
                     </div>
                     <span className="xb-item--arrow">
-                                                                 <Arrow width={28} height={28} /> 
-
+                        <Arrow width={28} height={28} />
                     </span>
-                    <a className="xb-overlay" href="#!"></a>
+                    <a className="xb-overlay" href="https://www.youtube.com/@axisystemspk" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a>
                 </div>
             </div>
             <div className="xb-footer-bottom">
