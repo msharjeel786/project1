@@ -92,18 +92,18 @@ export default function Navbar() {
               <nav className="main-menu collapse navbar-collapse">
                 <ul className="xb-nav">
                   <li className="xb-nav__item">{navLink("/", "Home")}</li>
-                  <li className="xb-nav__item">{navLink("#about", "About Us")}</li>
+                  <li className="xb-nav__item">{navLink("/#about", "About Us")}</li>
                   <li className="menu-item-has-children megamenu">
-                    <a href="#tools" className="xb-nav__link"><span>Services</span></a>
+                    <a href="/#tools" className="xb-nav__link"><span>Services</span></a>
                     {servicesMegamenu}
                   </li>
                   <li className="xb-nav__item">{navLink(blogHref, "Blog")}</li>
-                  <li className="xb-nav__item">{navLink("#contact", "Contact Us")}</li>
+                  <li className="xb-nav__item">{navLink("/#contact", "Contact Us")}</li>
                 </ul>
               </nav>
             </div>
             <div className="header-btn">
-              <a className="thm-btn" href="#contact">JOIN NOW</a>
+              <a className="thm-btn" href="/#contact">JOIN NOW</a>
             </div>
             <div className="header-bar-mobile side-menu d-lg-none">
               <a className="xb-nav-mobile" href="javascript:void(0);">
@@ -125,11 +125,11 @@ export default function Navbar() {
                     <li className="xb-nav__item">{navLink("/", "Home")}</li>
                     <li className="xb-nav__item">{navLink("#about", "About Us")}</li>
                     <li className="menu-item-has-children megamenu">
-                      <a href="#tools" className="xb-nav__link"><span>Services</span></a>
+                      <a href="/#tools" className="xb-nav__link"><span>Services</span></a>
                       {servicesMegamenu}
                     </li>
                     <li className="xb-nav__item">{navLink(blogHref, "Blog")}</li>
-                    <li className="xb-nav__item">{navLink("#contact", "Contact Us")}</li>
+                    <li className="xb-nav__item">{navLink("/#contact", "Contact Us")}</li>
                   </ul>
                 </nav>
               </div>
