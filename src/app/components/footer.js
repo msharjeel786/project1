@@ -88,14 +88,14 @@ export default function Footer() {
             <div className="xb-footer-bottom">
                 <div className="contact-item">
                     <img src="/assets/img/icon/location-icon.svg" alt="icon" />
-                    <span className="contact-method" style={{ fontSize: '18px' }}>6th Floor, NTS Building, Plot # 96 Street 4, H-8/1, Islamabad, Pakistan</span>
+                    <span className="contact-method" style={{ fontSize: '12px' }}>6th Floor, NTS Building, Plot # 96 Street 4, H-8/1, Islamabad, Pakistan</span>
                 </div>
                 <div className="contact-item copyright-item">
                     <p>Copyright © 2026 <a href="#home">AXI Systems </a>, All rights reserved.</p>
                 </div>
                 <div className="contact-item">
                     <a href="callto:+(1)12304528597"><img src="/assets/img/icon/call-icon.svg" alt="icon" /></a>
-                    <a className="contact-method" href="callto:+(1)12304528597">+92-334-5558140</a>
+                    <a className="contact-method" href="callto:+(1)12304528597" style={{ fontSize: '12px' }}>+92-334-5558140</a>
                 </div>
             </div>
         </div>
