@@ -22,8 +22,8 @@ export default function Served() {
                             {/* <h3 className="xb-title">Education</h3> */}
                         </div>
                         <div className="xb-industries-item xb-border">
-                            <div className="xb-icon">
-                                <img src="/assets/img/icon/Frame 9-CaL_vncL.png" alt="icon" />
+                            <div className="xb-icon" >
+                                <img  src="/assets/img/icon/Frame 9-CaL_vncL.png" alt="icon" />
                             </div>
                             {/* <h3 className="xb-title">Logistics</h3> */}
                         </div>

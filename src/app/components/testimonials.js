@@ -64,8 +64,8 @@ export default function Testimonials() {
                                 <div className="xb-item--inner xb-border">
                                     <ul className="xb-item--rating list-unstyled ul_li">
                                         <li><i className="fa-solid fa-star-sharp"></i></li>
-                                        <li>Clutch</li>
-                                        <li>4.7</li>
+                                        {/* <li>Clutch</li>
+                                        <li>4.7</li> */}
                                     </ul>
                                     {renderText("The team at AXI Systems is exceptional! From the initial consultation to the final delivery, they demonstrated technical brilliance and a client-first approach. The software solutions they provided have transformed the way we operate, making us more agile and future-ready. We’re thrilled to have found such a reliable partner.", 0)}
                                     <div className="xb-item--author ul_li">
@@ -83,14 +83,14 @@ export default function Testimonials() {
                                 <div className="xb-item--inner xb-border">
                                     <ul className="xb-item--rating list-unstyled ul_li">
                                         <li><i className="fa-solid fa-star-sharp"></i></li>
-                                        <li>Clutch</li>
-                                        <li>5.0</li>
+                                        {/* <li>Clutch</li>
+                                        <li>5.0</li> */}
                                     </ul>
                                     {renderText("AXI Systems has been an absolute game-changer for our business. Their innovative AI solutions have not only streamlined our operations but also significantly boosted our efficiency and customer satisfaction. The team is incredibly knowledgeable, responsive, and dedicated to delivering top-notch results. We couldn't be happier with the partnership and look forward to achieving even greater success together!", 1)}
                                     <div className="xb-item--author ul_li">
                                         <div className="xb-item--avatar"><img src="https://ui-avatars.com/api/?name=M+Sheheryar+Sultan&size=80&background=dbeafe&color=1d4ed8" alt="avatar" /></div>
                                         <div className="xb-item--holder">
-                                            <h3 className="xb-item--name">M Sheheryar Sultan</h3>
+                                            <h3 className="xb-item--name">Sheheryar Sultan</h3>
                                             <span className="xb-item--desig">NHA</span>
                                         </div>
                                     </div>
@@ -102,8 +102,8 @@ export default function Testimonials() {
                                 <div className="xb-item--inner xb-border">
                                     <ul className="xb-item--rating list-unstyled ul_li">
                                         <li><i className="fa-solid fa-star-sharp"></i></li>
-                                        <li>Clutch</li>
-                                        <li>5.0</li>
+                                        {/* <li>Clutch</li>
+                                        <li>5.0</li> */}
                                     </ul>
                                     {renderText("AXI Systems is recognized as a pioneering force in the tech industry, dedicated to delivering innovative software solutions that enable businesses to achieve their goals efficiently and effectively. Their unwavering commitment to quality and customer satisfaction distinguishes them as a trusted partner for organizations seeking to enhance their digital capabilities.", 2)}
                                     <div className="xb-item--author ul_li">

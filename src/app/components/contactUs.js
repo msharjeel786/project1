@@ -67,9 +67,11 @@ export default function ContactUs() {
                                              <div className="xb-input-field xb-select-field">
                                                  <select className="nice-select">
                                                      <option value="1">Select Service*</option>
-                                                     <option value="2">AI - marketing</option>
-                                                     <option value="3">AI consulting</option>
-                                                     <option value="4">AI chatbot virtual</option>
+                                                     <option value="2">AI & Data Analytics</option>
+                                                     <option value="3">Cybersecurity</option>
+                                                     <option value="4">Digital Education</option>
+                                                     <option value="5">Cloud Infrastructure</option>
+                                                     <option value="6">Data Management</option>
                                                  </select>
                                                  <img src="/assets/img/icon/list-icon.svg" alt="icon" />
                                              </div>

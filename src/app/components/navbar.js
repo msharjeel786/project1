@@ -93,11 +93,12 @@ export default function Navbar() {
                 <ul className="xb-nav">
                   <li className="xb-nav__item">{navLink("/", "Home")}</li>
                   <li className="xb-nav__item">{navLink("/#about", "About Us")}</li>
-                  <li className="menu-item-has-children megamenu">
-                    <a href="/#tools" className="xb-nav__link"><span>Services</span></a>
-                    {servicesMegamenu}
-                  </li>
-                  <li className="xb-nav__item">{navLink(blogHref, "Blog")}</li>
+                  <li className="xb-nav__item">{navLink("/#services", "services")}</li>
+                  {/* <li className="xb-nav__item">
+                     <a href="#tools" className="xb-nav__link"><span>Services</span></a> */}
+                    {/* {servicesMegamenu}  */}
+                  {/* </li> */}
+                  <li className="xb-nav__item">{navLink(blogHref, "Events")}</li>
                   <li className="xb-nav__item">{navLink("/#contact", "Contact Us")}</li>
                 </ul>
               </nav>
@@ -124,9 +125,9 @@ export default function Navbar() {
                   <ul className="xb-nav xb-nav--mobile">
                     <li className="xb-nav__item">{navLink("/", "Home")}</li>
                     <li className="xb-nav__item">{navLink("#about", "About Us")}</li>
-                    <li className="menu-item-has-children megamenu">
-                      <a href="/#tools" className="xb-nav__link"><span>Services</span></a>
-                      {servicesMegamenu}
+                    <li className="xb-nav__item">
+                      <a href="#tools" className="xb-nav__link"><span>Services</span></a>
+                      {/* {servicesMegamenu} */}
                     </li>
                     <li className="xb-nav__item">{navLink(blogHref, "Blog")}</li>
                     <li className="xb-nav__item">{navLink("/#contact", "Contact Us")}</li>
