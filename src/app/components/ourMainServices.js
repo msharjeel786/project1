@@ -71,7 +71,7 @@ export default function OurMainServices() {
                 <span className="round-img"><img src="/assets/img/icon/b10c3e43e836d32554bf.gif" alt="image" /></span> Helping you grow with the power of AI
               </h2>
               <div className="xb-heading-btn d-inline">
-                <a className="thm-btn agency-btn" href="#services">
+                <a className="thm-btn agency-btn" style={{ paddingLeft: '8px' }} href="#services">
                   <span className="text">view more services</span>
                   <span className="arrow">
                     <span className="arrow-icon">

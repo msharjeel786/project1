@@ -494,7 +494,7 @@
 		startVisible: true,
 	});	
 	$('.marquee-right').marquee({
-		speed: 50,
+		speed: 10,
 		// gap: 50,
 		delayBeforeStart: 0,
 		direction: 'right',

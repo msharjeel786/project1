@@ -256,7 +256,7 @@
 /* Who We Are: company logos belt — 100px margin on mobile, 170px on desktop */
 @media (max-width: 991px) {
   .xb-about-img-wrap .xb-about-img-item {
-    margin-right: 100px !important;
+    margin-right: 20px !important;
   }
 }
 
@@ -486,5 +486,8 @@
   .prologue-section {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
+  }
+  .pt-150 {
+    padding-top: 100px !important;
   }
 }

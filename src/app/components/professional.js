@@ -6,6 +6,29 @@ export default function Professional() {
 
   return (
    <section className="industries pos-rel pt-145 pb-50 bg_img">
+            <style dangerouslySetInnerHTML={{ __html: `
+              @media (max-width: 991px) {
+                .xb-industries-logo.professional-belt-logo {
+                  max-width: min(200px, 52vw) !important;
+                  min-width: 120px;
+                  padding: 0 8px;
+                  
+                  box-sizing: border-box;
+                  display: flex !important;
+                  justify-content: center !important;
+                  align-items: center !important;
+                  width: 100%;
+                  margin-left: auto !important;
+                  margin-right: auto !important;
+                }
+                .xb-industries-logo.professional-belt-logo img {
+                  max-width: 100%;
+                  height: auto;
+                  margin-bottom: 60px;
+                  object-fit: contain;
+                }
+              }
+            ` }} />
             <div className="container">
                 <div className="sec-title sec-title-center text-center mb-40">
                     <span className="sub-title mb-15">Professional & Trust-Building</span>
@@ -341,8 +364,23 @@ export default function Professional() {
                                     <img src="/assets/img/industries/gradient02.png" alt="gardiant-image" />
                                 </div>
                             </div>
-                            <div className="xb-industries-logo wow zoomIn" data-wow-delay="0ms" data-wow-duration="600ms">
-                                <img src="/assets/img/industries/indus-logo.png" alt="logo" />
+                            <div
+                                className="xb-industries-logo professional-belt-logo wow zoomIn"
+                                data-wow-delay="0ms"
+                                data-wow-duration="600ms"
+                                style={{
+                                  display: 'flex',
+                                  justifyContent: 'center',
+                                  alignItems: 'center',
+                                  width: '100%',
+                                  margin: '0 auto',
+                                }}
+                            >
+                                <img
+                                    src="/assets/img/industries/indus-logo.png"
+                                    alt="logo"
+                                    style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                                />
                             </div>
                         </div>
                     </div>

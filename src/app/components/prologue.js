@@ -6,7 +6,7 @@ export default function Prologue() {
 
   return (
 
-      <section className="contact-section prologue-section pt-150 pb-140 bg_img" data-background="/assets/img/bg/contact-bg.png"> 
+      <section  className="contact-section pt-150 pb-140 bg_img" data-background="/assets/img/bg/contact-bg.png"> 
                  <div className="container">
 <div className="row mt-none-50 justify-content-center align-items-center">
                      <div className="col-lg-7 mt-50">
