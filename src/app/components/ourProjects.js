@@ -27,7 +27,7 @@ export default function OurProjects() {
                     <h2 className="title"><span className="round-img"><img src="/assets/img/icon/b10c3e43e836d32554bf.gif" alt="image" /></span>  Explore every Products with full detail
                     </h2>
                     <div className="xb-heading-btn d-inline">
-                        <a className="thm-btn agency-btn" href="#contact">
+                        <a className="thm-btn agency-btn" href="#contact" style={{ paddingLeft: '8px' }}>
                             <span className="text">
                                 request a demo
                             </span>

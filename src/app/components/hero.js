@@ -5,22 +5,25 @@ import Arrow from '../../svg/arrow.svg'
 
 const CAROUSEL_IMAGES = Array.from({ length: 17 }, (_, i) => `/carousel/${i + 1}.png`);
 const IMAGE_DURATION_MS = 3500;
-const FADE_DURATION_MS = 600;
+const SLIDE_DURATION_MS = 750;
+const SLIDE_EASING = "cubic-bezier(0.25, 0.46, 0.45, 0.94)";
 
 export default function Hero() {
   const [phase, setPhase] = useState("video");
   const [imageIndex, setImageIndex] = useState(0);
   const [leaveIndex, setLeaveIndex] = useState(undefined);
-  const [fadingOutImages, setFadingOutImages] = useState(false);
-  const [fadeActive, setFadeActive] = useState(false);
-  const [panelVisible, setPanelVisible] = useState(false);
+  const [imagesSlidingOut, setImagesSlidingOut] = useState(false);
+  const [videoSlidingIn, setVideoSlidingIn] = useState(false);
+  const [videoSlideInActive, setVideoSlideInActive] = useState(false);
+  const [panelSlideIn, setPanelSlideIn] = useState(false);
+  const [slideActive, setSlideActive] = useState(false);
   const videoRef = useRef(null);
 
   const onVideoEnded = () => {
     setPhase("images");
     setImageIndex(0);
     setLeaveIndex(undefined);
-    setPanelVisible(false);
+    setPanelSlideIn(false);
   };
 
   useEffect(() => {
@@ -29,17 +32,19 @@ export default function Hero() {
       if (imageIndex < 16) {
         setImageIndex((i) => i + 1);
       } else {
-        setFadingOutImages(true);
+        setImagesSlidingOut(true);
+        setVideoSlidingIn(true);
         setTimeout(() => {
           setPhase("video");
           setImageIndex(0);
           setLeaveIndex(undefined);
-          setFadingOutImages(false);
+          setImagesSlidingOut(false);
+          setVideoSlidingIn(false);
           if (videoRef.current) {
             videoRef.current.currentTime = 0;
             videoRef.current.play().catch(() => {});
           }
-        }, FADE_DURATION_MS);
+        }, SLIDE_DURATION_MS);
       }
     }, IMAGE_DURATION_MS);
     return () => clearTimeout(t);
@@ -48,31 +53,54 @@ export default function Hero() {
   useEffect(() => {
     if (phase !== "images") return;
     setLeaveIndex(imageIndex > 0 ? imageIndex - 1 : undefined);
-    setFadeActive(false);
-    const t = setTimeout(() => setLeaveIndex(undefined), FADE_DURATION_MS);
+    setSlideActive(false);
+    const t = setTimeout(() => setLeaveIndex(undefined), SLIDE_DURATION_MS);
     return () => clearTimeout(t);
   }, [phase, imageIndex]);
 
   useEffect(() => {
     if (leaveIndex === undefined) {
-      setFadeActive(false);
+      setSlideActive(false);
       return;
     }
-    const raf = requestAnimationFrame(() => setFadeActive(true));
+    const raf = requestAnimationFrame(() => setSlideActive(true));
     return () => cancelAnimationFrame(raf);
   }, [leaveIndex]);
 
   useEffect(() => {
-    if (phase === "images" && !fadingOutImages) {
-      const raf = requestAnimationFrame(() => setPanelVisible(true));
+    if (phase === "images" && !imagesSlidingOut) {
+      const raf = requestAnimationFrame(() => setPanelSlideIn(true));
       return () => cancelAnimationFrame(raf);
     }
-    if (phase === "video") setPanelVisible(false);
-  }, [phase, fadingOutImages]);
+    if (phase === "video") setPanelSlideIn(false);
+  }, [phase, imagesSlidingOut]);
 
-  const showImagesPanel = phase === "images" || fadingOutImages;
-  const imagesPanelOpacity =
-    phase === "images" && !fadingOutImages && panelVisible ? 1 : 0;
+  useEffect(() => {
+    if (!videoSlidingIn) {
+      setVideoSlideInActive(false);
+      return;
+    }
+    setVideoSlideInActive(false);
+    const raf = requestAnimationFrame(() => setVideoSlideInActive(true));
+    return () => cancelAnimationFrame(raf);
+  }, [videoSlidingIn]);
+
+  const showImagesPanel = phase === "images" || imagesSlidingOut;
+  const transitionCss = `transform ${SLIDE_DURATION_MS / 1000}s ${SLIDE_EASING}`;
+
+  const videoTranslateX = videoSlidingIn
+    ? (videoSlideInActive ? "0%" : "100%")
+    : phase === "video"
+      ? "0%"
+      : "-100%";
+
+  const imagesPanelTranslateX = !showImagesPanel
+    ? "100%"
+    : imagesSlidingOut
+      ? "-100%"
+      : panelSlideIn
+        ? "0%"
+        : "100%";
 
   const bgStyle = {
     position: "absolute",
@@ -80,78 +108,111 @@ export default function Hero() {
     left: 0,
     width: "100%",
     height: "100%",
+    minHeight: "100%",
     objectFit: "cover",
     zIndex: -1,
   };
-  const fadeTransition = `opacity ${FADE_DURATION_MS / 1000}s ease`;
 
   return (
     <section
       id="home"
-      className="hero hero-style pos-rel bg_img"
-      style={{ position: "relative", overflow: "hidden" }}
+      className="hero hero-style pos-rel bg_img hero-bg-clip"
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        width: "100%",
+        maxWidth: "100%",
+        minHeight: "100%",
+      }}
     >
-      <video
-        ref={videoRef}
-        autoPlay
-        loop={false}
-        muted
-        playsInline
-        onEnded={onVideoEnded}
-        style={{
-          ...bgStyle,
-          opacity: phase === "video" ? 1 : 0,
-          pointerEvents: phase === "video" ? "auto" : "none",
-          transition: fadeTransition,
-        }}
-      >
-        <source src="/assets/img/bg/Futuristic_City_and_Business_District.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      {showImagesPanel && (
+      {/* Mobile: strict viewport-sized rectangle so background never overflows */}
+      <div className="hero-bg-viewport">
         <div
+          className="hero-bg-track"
           style={{
-            ...bgStyle,
-            opacity: imagesPanelOpacity,
-            transition: fadeTransition,
-            display: "flex",
-            alignItems: "stretch",
-            justifyContent: "stretch",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            width: "100%",
+            height: "100%",
+            overflow: "hidden",
+            zIndex: -1,
           }}
-          aria-hidden="true"
         >
-          {leaveIndex !== undefined && (
-            <img
-              key={`leave-${leaveIndex}`}
-              src={CAROUSEL_IMAGES[leaveIndex]}
-              alt=""
-              style={{
-                position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                opacity: fadeActive ? 0 : 1,
-                transition: fadeTransition,
-              }}
-            />
-          )}
-          <img
-            key={`current-${imageIndex}`}
-            src={CAROUSEL_IMAGES[imageIndex]}
-            alt=""
+          <div
+            className="hero-bg-layer"
             style={{
-              position: "absolute",
-              inset: 0,
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              opacity: leaveIndex !== undefined ? (fadeActive ? 1 : 0) : 1,
-              transition: fadeTransition,
+              ...bgStyle,
+              transition: transitionCss,
+              transform: `translateX(${videoTranslateX})`,
+              pointerEvents: phase === "video" ? "auto" : "none",
             }}
-          />
+          >
+            <video
+              ref={videoRef}
+              autoPlay
+              loop={false}
+              muted
+              playsInline
+              onEnded={onVideoEnded}
+              className="hero-bg-media"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            >
+              <source src="/assets/img/bg/Futuristic_City_and_Business_District.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          {showImagesPanel && (
+            <div
+              className="hero-bg-layer"
+              style={{
+                ...bgStyle,
+                transition: transitionCss,
+                transform: `translateX(${imagesPanelTranslateX})`,
+              }}
+              aria-hidden="true"
+            >
+              {leaveIndex !== undefined && (
+                <img
+                  key={`leave-${leaveIndex}`}
+                  src={CAROUSEL_IMAGES[leaveIndex]}
+                  alt=""
+                  className="hero-bg-media"
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    transition: transitionCss,
+                    transform: slideActive ? "translateX(-100%)" : "translateX(0)",
+                  }}
+                />
+              )}
+              <img
+                key={`current-${imageIndex}`}
+                src={CAROUSEL_IMAGES[imageIndex]}
+                alt=""
+                className="hero-bg-media"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  transition: transitionCss,
+                  transform:
+                    leaveIndex !== undefined
+                      ? slideActive ? "translateX(0)" : "translateX(100%)"
+                      : "translateX(0)",
+                }}
+              />
+            </div>
+          )}
         </div>
-      )}
+      </div>
       <div
         style={{
           position: "absolute",
