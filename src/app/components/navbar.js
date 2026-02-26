@@ -76,7 +76,7 @@ export default function Navbar() {
     </ul>
   );
 
-  const blogHref = path === "/" || path === "" ? "#blogs" : "/events";
+  const blogHref = path === "/" || path === "" ? "/events" : "/events";
 
   return (
     <header id="xb-header-area" className="header-area header-style--one header-transparent is-sticky" data-pathname={path}>
