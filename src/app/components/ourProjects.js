@@ -21,6 +21,19 @@ export default function OurProjects() {
 
   return (
    <section id="tools" className="project project-tools pt-135 pb-150">
+            <style dangerouslySetInnerHTML={{ __html: `
+              /* Mobile: use real border so it never ends early with long content */
+              @media (max-width: 767px) {
+                .project-tools .xb-project-card-scroll.xb-border {
+                  border: 1px solid rgba(255, 255, 255, 0.2);
+                  border-radius: 10px;
+                  box-sizing: border-box;
+                }
+                .project-tools .xb-project-card-scroll.xb-border::after {
+                  display: none !important;
+                }
+              }
+            ` }} />
             <div className="container">
                 <div className="sec-title custom-sec-title xb-sec-padding text-center">
                     <span className="sub-title">Our  Products</span>
@@ -48,8 +61,8 @@ export default function OurProjects() {
                             <div className="xb-project-content">
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span>  */}
-                                    <h2 className="xb-item--title">PakOS</h2>
-                                    <p className="xb-item--content">Debian-based Linux for speed, security, and simplicity. Fast LXQt desktop for modern and older PCs.</p>
+                                    <h2 className="xb-item--title">PakOS - Secure, Lightweight, and Modern Linux</h2>
+                                    <p className="xb-item--content">PakOS is a Debian-based Linux distribution built for speed, security, and simplicity. Designed for users in Pakistan but ready for everyone, it delivers a fast, resource-efficient LXQt desktop that runs smoothly on both modern and older PCs.</p>
                                        <div className="xb-item---btn mt-70">
                                         <a className="thm-btn agency-btn" href="https://axitechnologies.ai/pak-os-linux/" target="_blank" rel="noopener noreferrer">
                                             <span className="text">
@@ -71,8 +84,8 @@ export default function OurProjects() {
                             <div className="xb-project-content">
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
-                                    <h2 className="xb-item--title">Advanced USB Security</h2>
-                                    <p className="xb-item--content">Enterprise-grade USB security with behavioral analysis and access control against USB-based threats.</p>
+                                    <h2 className="xb-item--title">Advanced USB Security Solutions</h2>
+                                    <p className="xb-item--content">Protect your organization from USB-based threats with enterprise-grade security, behavioral analysis, and comprehensive access control..</p>
                                        <div className="xb-item---btn mt-70">
                                         <a className="thm-btn agency-btn" href="https://axitechnologies.ai/guardyusb/" target="_blank" rel="noopener noreferrer">
                                             <span className="text">
@@ -94,8 +107,9 @@ export default function OurProjects() {
                             <div className="xb-project-content">
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
-                                    <h2 className="xb-item--title">Invisely – Zero Trust Security</h2>
-                                    <p className="xb-item--content">ZTNA platform that replaces VPNs and NGFWs with comprehensive Zero Trust access.</p>
+                                    <h2 className="xb-item--title">Invisely - Zero Trust Security Suite for Enterprises
+</h2>
+                                    <p className="xb-item--content">An indigenous, comprehensive Zero Trust Network Access (ZTNA) platform designed to replace traditional perimeter-based security models like VPNs and NGFWs. </p>
                                        <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
@@ -117,8 +131,11 @@ export default function OurProjects() {
                             <div className="xb-project-content">
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
-                                    <h2 className="xb-item--title">SEIEM (Federated Security Analytics)</h2>
-                                    <p className="xb-item--content">Unified analytics from multiple SIEMs into one dashboard for SOC and compliance.</p>
+                                    <h2 className="xb-item--title">SEIEM (Federated Security Analytics Platform)
+
+</h2>
+                                    <p className="xb-item--content">A central security analytics platform that aggregates and correlates logs and events from multiple, disparate SIEM systems (like Splunk, QRadar, Sentinel) into a single pane of glass. Built on Elastic Stack (Elasticsearch, Kibana), it enables cross‑SIEM visibility, eliminates detection silos, and provides unified dashboards for SOC, executive, and compliance reporting.
+ </p>
     <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
@@ -140,8 +157,13 @@ export default function OurProjects() {
                             <div className="xb-project-content">
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
-                                    <h2 className="xb-item--title">Threat Intelligence Platform (TIP)</h2>
-                                    <p className="xb-item--content">Aggregates and enriches threat intel from multiple sources; feeds SIEM, SOAR, and firewalls.</p>
+                                    <h2 className="xb-item--title">Threat Intelligence Platform (TIP)
+
+
+</h2>
+                                    <p className="xb-item--content">A platform that aggregates, enriches, scores, and operationalizes threat intelligence from open‑source, commercial, and internal sources. It transforms raw indicators of compromise (IOCs) into context‑aware, prioritized intelligence and automatically disseminates actionable data to security tools such as SIEM, SOAR, and firewalls.
+
+ </p>
     <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
@@ -163,8 +185,10 @@ export default function OurProjects() {
                             <div className="xb-project-content">
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
-                                    <h2 className="xb-item--title">0xCrawler</h2>
-                                    <p className="xb-item--content">Automated recon and vulnerability scanning in one workflow for faster threat detection.</p>
+                                    <h2 className="xb-item--title">0xCrawler (Automated Recon & Vulnerability Orchestration)
+
+</h2>
+                                    <p className="xb-item--content">Our 0xCrawler automated tool streamlines reconnaissance and vulnerability scanning by integrating powerful open-source technologies into a unified workflow. It minimizes manual effort and accelerates threat detection, empowering modern security teams with faster, more efficient, and comprehensive insights.</p>
                                        <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
@@ -186,8 +210,14 @@ export default function OurProjects() {
                             <div className="xb-project-content">
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
-                                    <h2 className="xb-item--title">DLP (Data Loss Prevention)</h2>
-                                    <p className="xb-item--content">Monitor and protect sensitive data across network, endpoints, and storage; prevent exfiltration and ensure compliance.</p>
+                                    <h2 className="xb-item--title">DLP (Data Loss Prevention)
+
+
+
+</h2>
+                                    <p className="xb-item--content">A comprehensive Data Loss Prevention system designed to monitor, detect, and protect sensitive data across network traffic, endpoints, and storage environments. It prevents unauthorized data exfiltration, ensures compliance with regulatory standards, and safeguards confidential information such as PII, financial data, and intellectual property through encryption, access controls, real-time monitoring, and automated policy enforcement.
+
+ </p>
     <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
@@ -209,8 +239,9 @@ export default function OurProjects() {
                             <div className="xb-project-content">
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
-                                    <h2 className="xb-item--title">FIRETHORN</h2>
-                                    <p className="xb-item--content">Unified security operations platform for CERT/SOC: threat visibility, detection, and response.</p>
+                                    <h2 className="xb-item--title">FIRETHORN
+</h2>
+                                    <p className="xb-item--content">FIRETHORN is a unified security operations platform built to enhance CERT and SOC effectiveness by delivering end-to-end threat visibility, faster detection, and streamlined response across complex IT environments. </p>
                                        <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
@@ -233,7 +264,7 @@ export default function OurProjects() {
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
                                     <h2 className="xb-item--title">PAM (Privileged Access Management)</h2>
-                                    <p className="xb-item--content">Session recording, command logging, and real-time replay. Immutable audit trail for compliance.</p>
+                                    <p className="xb-item--content">The system offers full session recording and command-level logging to capture every user action for complete visibility. It provides real-time monitoring with replay capability, enabling administrators to review activities live or retrospectively. All audit records are immutable and tamper-proof, ensuring integrity and regulatory compliance.</p>
                                        <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
@@ -255,8 +286,9 @@ export default function OurProjects() {
                             <div className="xb-project-content">
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
-                                    <h2 className="xb-item--title">Vision Lab Facial Recognition</h2>
-                                    <p className="xb-item--content">AI-driven facial recognition for live streams and stored data; accurate in varied conditions.</p>
+                                    <h2 className="xb-item--title">Vision Lab Facial Recognition Solution</h2>
+                                    <p className="xb-item--content">Vision Lab Facial Recognition Solution is an AI-driven platform that performs secure and efficient facial recognition. It's a custom-built solution designed to perform facial recognition at multiple levels, from live streams to stored data. 
+It provides a highly accurate and efficient way to identify and track individuals in various conditions, such as age differences, partially covered faces, and low-light environments.</p>
    <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
@@ -280,7 +312,7 @@ export default function OurProjects() {
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
                                     <h2 className="xb-item--title">PAK-Austria Chatbot</h2>
-                                    <p className="xb-item--content">24/7 admissions assistant for PAF-IAST: eligibility, programs, fees, and application guidance.</p>
+                                    <p className="xb-item--content">The PAF-IAST Admissions Chatbot is a dedicated 24/7 virtual assistant designed to streamline the admissions process for prospective students of the Pak-Austria Fachhochschule Institute of Applied Sciences & Technology. It provides instant, accurate, and comprehensive guidance on all admission-related queries from eligibility and programs to fees and facilities through an intuitive conversational interface, ensuring a seamless and informed application experience.</p>
                                        <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
@@ -303,7 +335,8 @@ export default function OurProjects() {
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
                                     <h2 className="xb-item--title">AXI Chatbot</h2>
-                                    <p className="xb-item--content">Primary contact for visitors: quick, accurate answers on products and services.</p>
+                                    <p className="xb-item--content">It is designed to act as a primary point of contact for website visitors, providing quick and accurate information about the company's products and services.
+</p>
    <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
@@ -326,7 +359,7 @@ export default function OurProjects() {
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
                                     <h2 className="xb-item--title">AXI HR Bot</h2>
-                                    <p className="xb-item--content">Automates screening and scoring of job applications and CVs from input to analysis.</p>
+                                    <p className="xb-item--content">AXI HR Bot is an HR bot, designed to automate the process of screening and scoring job applications. It provides a centralized system for handling job details and CVs from initial input to final analysis.</p>
                                        <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
@@ -349,7 +382,7 @@ export default function OurProjects() {
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
                                     <h2 className="xb-item--title">SLAC (Smart Learning Assessment Certification)</h2>
-                                    <p className="xb-item--content">Secure online exams and certification with proctoring, anti-cheating, and multi-language support including Urdu.</p>
+                                    <p className="xb-item--content">SLAC (Smart Learning Assessment Certification) is a comprehensive, secure, and accessible online examination and certification platform designed to authenticate talent and expertise through proctored, technology-driven assessments. The platform facilitates seamless exam creation, administration, and participation while deploying advanced anti-cheating measures to ensure integrity. It supports multiple languages including full Urdu support and technical content, making it ideal for educational, professional, and technical certification purposes across diverse regions and disciplines.</p>
                                        <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
@@ -372,7 +405,7 @@ export default function OurProjects() {
                                 <div className="xb-item--inner xb-border xb-project-card-scroll" style={cardInnerStyle}>
                                     {/* <span className="sub-title">Content Creation</span> */}
                                     <h2 className="xb-item--title">BSVT FPV Drone Series</h2>
-                                    <p className="xb-item--content">Professional quadcopters and hexacopters for ISR and payload delivery; long-range, day/night, autonomous.</p>
+                                    <p className="xb-item--content">The BSVT FPV Drone series represents a professional-grade lineup of quadcopter and hexacopter systems engineered for long-range, high-endurance dual-role missions. These drones are equipped for Intelligence, Surveillance, and Reconnaissance (ISR) as a "Hunter" and can be configured for precision payload delivery as a "Killer." Featuring carbon fiber fuselages, multi-band communication links, day/night imaging systems, and advanced autonomous capabilities.</p>
                                        <div className="xb-item---btn mt-70">
                                         <span className="thm-btn agency-btn read-more-disabled">
                                             <span className="text">
