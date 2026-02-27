@@ -2,34 +2,103 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Professional() {
- 
+    const itemText = "PakOS - Secure, Lightweight, and Modern Linux";
+
+    const marqueeRow1 = [
+        { tag: "post", number: "300", text: itemText },
+        { tag: "GET", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "GET", number: "200", text: itemText },
+        { tag: "post", number: "300", text: itemText },
+        { tag: "GET", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "GET", number: "200", text: itemText },
+        { tag: "GET", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "GET", number: "200", text: itemText }
+    ];
+
+    const marqueeRow2 = [
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "300", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "300", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "300", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "300", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "300", text: itemText }
+    ];
+
+    const marqueeRow3 = [
+        { tag: "post", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" }
+    ];
+
+    const marqueeRow4 = [
+        { tag: "post", number: "300", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "GET", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "300", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "GET", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "GET", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" }
+    ];
+
+    const marqueeRow5 = [
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "300", text: itemText },
+        { tag: "get", number: "100", text: itemText },
+        { tag: "post", number: "300", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "300", text: itemText },
+        { tag: "get", number: "100", text: itemText },
+        { tag: "post", number: "300", text: itemText },
+        { tag: "get", number: "100", text: itemText },
+        { tag: "post", number: "300", text: itemText }
+    ];
+
+    const marqueeRow6 = [
+        { tag: "post", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "get", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "post", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "get", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" },
+        { tag: "get", number: "200", text: itemText },
+        { tag: "delate", number: "500", text: itemText, tagClass: "tag-red", numberClass: "number-red" }
+    ];
+
+    const renderRow = (items) =>
+        items.map((item, index) => (
+            <div className="xb-marquee-item" key={`${item.tag}-${item.number}-${index}`}>
+                <span className={`tag${item.tagClass ? ` ${item.tagClass}` : ""}`}>
+                    {item.tag}
+                </span>
+                <span className={`number${item.numberClass ? ` ${item.numberClass}` : ""}`}>
+                    {item.number}
+                </span>
+                <p>{item.text}</p>
+            </div>
+        ));
 
   return (
-   <section className="industries pos-rel pt-145 pb-50 bg_img">
-            <style dangerouslySetInnerHTML={{ __html: `
-              @media (max-width: 991px) {
-                .xb-industries-logo.professional-belt-logo {
-                  max-width: min(200px, 52vw) !important;
-                  min-width: 120px;
-                  padding: 0 8px;
-                  
-                  box-sizing: border-box;
-                  display: flex !important;
-                  justify-content: center !important;
-                  align-items: center !important;
-                  width: 100%;
-                  margin-left: auto !important;
-                  margin-right: auto !important;
-                }
-                .xb-industries-logo.professional-belt-logo img {
-                  max-width: 100%;
-                  height: auto;
-                  margin-bottom: 60px;
-                  object-fit: contain;
-                }
-              }
-            ` }} />
-            <div className="container">
+     <section className="industries pos-rel pt-145 pb-50 bg_img">
+                        <div className="container">
                 <div className="sec-title sec-title-center text-center mb-40">
                     <span className="sub-title mb-15">Professional & Trust-Building</span>
                     <h2 className="title">Real-time AI for smarter business</h2>
@@ -40,321 +109,28 @@ export default function Professional() {
                             <div className="xb-industries-marquee">
                                 <div className="xb-indus-marquee-inner">
                                     <div className="xb-marquee-items marquee-horizontal">
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">GET</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">GET</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">GET</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">GET</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">GET</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">GET</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
+                                        {renderRow(marqueeRow1)}
+                                        {renderRow(marqueeRow1)}
                                     </div>
                                     <div className="xb-marquee-items marquee-horizontal-bottom">
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
+                                        {renderRow(marqueeRow2)}
+                                        {renderRow(marqueeRow2)}
                                     </div>
                                     <div className="xb-marquee-items marquee-horizontal">
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
+                                        {renderRow(marqueeRow3)}
+                                        {renderRow(marqueeRow3)}
                                     </div>
                                     <div className="xb-marquee-items marquee-horizontal-bottom">
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">GET</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">GET</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">GET</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
+                                        {renderRow(marqueeRow4)}
+                                        {renderRow(marqueeRow4)}
                                     </div>
                                     <div className="xb-marquee-items marquee-horizontal">
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">get</span>
-                                            <span className="number">100</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">get</span>
-                                            <span className="number">100</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">get</span>
-                                            <span className="number">100</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">300</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
+                                        {renderRow(marqueeRow5)}
+                                        {renderRow(marqueeRow5)}
                                     </div>
                                     <div className="xb-marquee-items marquee-horizontal-bottom">
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">get</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">post</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">get</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag">get</span>
-                                            <span className="number">200</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
-                                        <div className="xb-marquee-item">
-                                            <span className="tag tag-red">delate</span>
-                                            <span className="number number-red">500</span>
-                                            <p>PakOS - Secure, Lightweight, and Modern Linux</p>
-                                        </div>
+                                        {renderRow(marqueeRow6)}
+                                        {renderRow(marqueeRow6)}
                                     </div>
                                 </div>
                                 <div className="xb-gardiant-shape">

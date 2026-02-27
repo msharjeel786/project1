@@ -271,21 +271,22 @@
 	= testimonial slide
 	-------------------------------------------*/
 	var slider = new Swiper(".xb-testimonial-slider", {
-		loop: true,
+		loop: false,
 		speed: 400,
 		spaceBetween: 30,
-		slidesPerView: 5,
-		centeredSlides: false,
+		slidesPerView: 3,
+		centeredSlides: true,
+		centeredSlidesBounds: true,
 		autoplay: {
 			enabled: true,
 			delay: 6000
 		},
 		breakpoints: {
 			'1700': {
-				slidesPerView: 5,
+				slidesPerView: 3,
 			},
 			'1600': {
-				slidesPerView: 4,
+				slidesPerView: 3,
 			},
 			'1024': {
 				slidesPerView: 3,

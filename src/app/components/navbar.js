@@ -124,7 +124,7 @@ export default function Navbar() {
                 <nav className="xb-header-nav">
                   <ul className="xb-nav xb-nav--mobile">
                     <li className="xb-nav__item">{navLink("/", "Home")}</li>
-                    <li className="xb-nav__item">{navLink("#about", "About Us")}</li>
+                    <li className="xb-nav__item">{navLink("/#about", "About Us")}</li>
                     <li className="xb-nav__item">
                       <a href="#tools" className="xb-nav__link"><span>Services</span></a>
                       {/* {servicesMegamenu} */}

@@ -11,7 +11,7 @@ export default function OurLatestNews() {
                     <div className="col-lg-4 mt-30">
                         <div className="sec-title blog-sec-title mb-70">
                             <span className="sub-title mb-15">Events & Gallery</span>
-                            <h2 className="title">Highlights from conferences, workshops, and milestones shaping Pakistan's digital ecosystem.<img src="/assets/img/icon/original-9e54f87f13d.gif" alt="shape" /></h2>
+                            <h2 className="title" style={{fontSize:'49px'}}>Highlights from conferences, workshops, and milestones shaping Pakistan's digital ecosystem.<img src="/assets/img/icon/original-9e54f87f13d.gif" alt="shape" /></h2>
                         </div>
                         <div className="blog-btn">
                             <a className="thm-btn agency-btn" href="/events">
@@ -52,7 +52,7 @@ export default function OurLatestNews() {
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-6 mt-30">
-                                <div className="xb-blog-item xb-small-blog-item wow fadeInUp" data-wow-delay="150ms" data-wow-duration="600ms">
+                                <div className="xb-blog-item xb-small-blog-item wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">
                                     <div className="xb-item--inner img-hove-effect xb-border">
                                         <div className="xb-img">
                                             <a href="/events"><img src="/assets/img/blog/52.png" alt="image" /></a>
@@ -61,9 +61,9 @@ export default function OurLatestNews() {
                                             <a href="/events"><img src="/assets/img/blog/52.png" alt="image" /></a>
                                         </div>
                                         <div className="xb-item--holder">
-                                            <ul className="xb-item--meta list-unstyled ul_li">
-                                                <li><img src="/assets/img/icon/blog-icon01.svg" alt="icon" />Secretary IT Visit — Mr. Zarrar Khan</li>
-                                                <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" />Visit </li>
+                                            <ul className="xb-item--meta list-unstyled ul_li" style={{gap:'37px'}}>
+                                                <li><img src="/assets/img/icon/blog-icon01.svg" alt="icon" />Secretary IT Visit—Mr.Zarrar Khan</li>
+                                                <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" />Visit</li>
                                             </ul>
                                             <h2 className="xb-item--title">
                                                 <a href="/events">Mr. Zarrar Khan, Secretary IT from the Ministry ..</a>
@@ -82,12 +82,12 @@ export default function OurLatestNews() {
                                             <a href="/events"><img src="/assets/img/blog/Crypto Minister Post.png" alt="image" /></a>
                                         </div>
                                         <div className="xb-item--holder">
-                                            <ul className="xb-item--meta list-unstyled ul_li">
-                                                <li><img src="/assets/img/icon/blog-icon01.svg" alt="icon" />Crypto Minister</li>
-                                                <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" />Ceremony </li>
+                                            <ul className="xb-item--meta list-unstyled ul_li" >
+                                                <li><img src="/assets/img/icon/blog-icon01.svg" alt="icon" />Crypto Minister      </li>
+                                                <li><img src="/assets/img/icon/blog-icon02.svg" alt="icon" /> Ceremony </li>
                                             </ul>
                                             <h2 className="xb-item--title">
-                                                <a href="/events">We at AXI Systems were honored to host Mr. Bilal Bin Saqib MBE ..</a>
+                                                <a href="/events">We at AXI Systems were honored to host Mr. Bilal Bin Saqib MBE, Minister of....</a>
                                             </h2>
                                         </div>
                                     </div>

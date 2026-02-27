@@ -19,14 +19,14 @@ export default function Testimonials() {
   const renderText = (text, index) => {
     const isExpanded = expanded[index];
     const shortText =
-      text.length > 100 ? text.substring(0, 100) + "..." : text;
+      text.length > 90 ? text.substring(0, 90) + "..." : text;
 
     return (
       <>
         <p className="xb-item--content">
           {isExpanded ? text : shortText}
         </p>
-        {text.length > 100 && (
+        {text.length > 90 && (
           <button
             onClick={() => toggleReadMore(index)}
             style={{
@@ -57,8 +57,9 @@ export default function Testimonials() {
                         <h2 className="title">Hear from our<img src="/assets/img/icon/animated-gif03.gif" alt="shape" />happy customers</h2>
                     </div>
                 </div>
-                <div className="xb-testimonial-slider">
-                    <div className="swiper-wrapper">
+                <div className="container">
+                    <div className="xb-testimonial-slider">
+                        <div className="swiper-wrapper">
                         <div className="swiper-slide">
                              <div className="xb-testimonial-item">
                                 <div className="xb-item--inner xb-border">
@@ -117,6 +118,7 @@ export default function Testimonials() {
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </section>
   );

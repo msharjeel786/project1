@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Arrow from '../../svg/arrow.svg'
 
-const CAROUSEL_IMAGES = Array.from({ length: 17 }, (_, i) => `/carousel/${i + 1}.png`);
+const CAROUSEL_IMAGES = Array.from({ length: 19 }, (_, i) => `/carousel/${i + 1}.png`);
 const IMAGE_DURATION_MS = 3500;
 const SLIDE_DURATION_MS = 750;
 const SLIDE_EASING = "cubic-bezier(0.25, 0.46, 0.45, 0.94)";
@@ -29,7 +29,7 @@ export default function Hero() {
   useEffect(() => {
     if (phase !== "images") return;
     const t = setTimeout(() => {
-      if (imageIndex < 16) {
+      if (imageIndex < 18) {
         setImageIndex((i) => i + 1);
       } else {
         setImagesSlidingOut(true);
